@@ -1,0 +1,284 @@
+﻿@model IEnumerable<WebApplication1.Models.Notification>
+
+@{
+    ViewData["Title"] = "Thông báo";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<!-- Bootstrap CSS for improved styling -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+    .notifications-header {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .notifications-title {
+        font-size: 2em;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .notifications-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+        .notifications-table th,
+        .notifications-table td {
+            border: 1px solid #ddd;
+            padding: 12px 15px;
+            text-align: left;
+        }
+
+        .notifications-table th {
+            background-color: #f2f2f2;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .notifications-table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .notifications-table tr:hover {
+            background-color: #f1f1f1;
+        }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+        .pagination a {
+            margin: 0 5px;
+            padding: 8px 16px;
+            text-decoration: none;
+            color: #007bff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+            .pagination a.active {
+                background-color: #007bff;
+                color: white;
+                border: 1px solid #007bff;
+            }
+
+            .pagination a:hover {
+                background-color: #ddd;
+            }
+
+    .btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+    }
+
+        .btn-icon i {
+            margin-right: 6px;
+        }
+
+    .modal .form-control {
+        margin-bottom: 1em;
+    }
+</style>
+
+<div class="container mt-5">
+    <div class="notifications-header">
+        <h2 class="notifications-title">Thông báo</h2>
+    </div>
+
+    <table class="notifications-table table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th>Tiêu đề</th>
+                <th>Nội dung</th>
+                <th>Ngày</th>
+                <th>Người nhận</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var notification in Model)
+            {
+                <tr>
+                    <td>@notification.NameContent</td>
+                    <td>@notification.Content</td>
+                    <td>@notification.Timestamp</td>
+                    <td>
+                        @{
+                            if (notification.UserType == 1)
+                            {
+                                @:Phụ huynh
+                            }
+                            else if (notification.UserType == 2)
+                            {
+                                @:Giáo Viên
+                            }
+                            else if (notification.UserType == 3)
+                            {
+                                @:Tất cả mọi người
+                            }
+                            else
+                            {
+                                @:Khác
+                            }
+                        }
+                    </td>
+                    <td>
+                        <button class="btn btn-primary btn-sm btn-icon" data-toggle="modal" data-target="#editModal" data-id="@notification.NotificationId" data-namecontent="@notification.NameContent" data-content="@notification.Content" data-userid="@notification.UserType">
+                            <i class="fas fa-edit"></i> Sửa
+                        </button>
+                        <form action="@Url.Action("DeleteNotification", "Home")" method="post" class="d-inline">
+                            <input type="hidden" name="id" value="@notification.NotificationId" />
+                            <button type="submit" class="btn btn-danger btn-sm btn-icon">
+                                <i class="fas fa-trash-alt"></i> Xóa
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div class="pagination">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <a href="@Url.Action("ThongBaoDaoTao", new { page = i })" class="@(ViewBag.CurrentPage == i ? "active" : "")">@i</a>
+        }
+    </div>
+
+    <hr />
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h3>Thêm Thông Báo Mới</h3>
+        </div>
+        <div class="card-body">
+            <form action="@Url.Action("AddNotification", "Home")" method="post" class="needs-validation" novalidate>
+                <div class="form-group">
+                    <label for="NameContent">Tiêu đề</label>
+                    <input type="text" class="form-control" id="NameContent" name="NameContent" required />
+                    <div class="invalid-feedback">
+                        Vui lòng cung cấp tiêu đề.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Content">Nội dung</label>
+                    <textarea class="form-control" id="Content" name="Content" required></textarea>
+                    <div class="invalid-feedback">
+                        Vui lòng cung cấp nội dung.
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="UserId">Người nhận</label>
+                    <select class="form-control" id="UserId" name="UserId" required>
+                        <option value="1">Phụ huynh</option>
+                        <option value="2">Giáo Viên</option>
+                        <option value="3">Tất cả mọi người</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Vui lòng chọn người nhận.
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-icon">
+                    <i class="fas fa-plus"></i> Thêm Thông Báo
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Edit Modal -->
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editModalLabel">Chỉnh sửa Thông Báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="@Url.Action("EditNotification", "Home")" method="post" class="needs-validation" novalidate>
+                    <input type="hidden" id="editId" name="id" />
+                    <div class="form-group">
+                        <label for="editNameContent">Tiêu đề</label>
+                        <input type="text" class="form-control" id="editNameContent" name="NameContent" required />
+                        <div class="invalid-feedback">
+                            Vui lòng cung cấp tiêu đề.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editContent">Nội dung</label>
+                        <textarea class="form-control" id="editContent" name="Content" required></textarea>
+                        <div class="invalid-feedback">
+                            Vui lòng cung cấp nội dung.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="editUserId">Người nhận</label>
+                        <select class="form-control" id="editUserId" name="UserId" required>
+                            <option value="1">Phụ huynh</option>
+                            <option value="2">Học sinh</option>
+                            <option value="3">Tất cả mọi người</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Vui lòng chọn người nhận.
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-icon">
+                        <i class="fas fa-save"></i> Lưu thay đổi
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+<script>
+    // JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            var forms = document.getElementsByClassName('needs-validation');
+            Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+
+    $('#editModal').on('show.bs.modal', function (event) {
+        var button = $(event.relatedTarget);
+        var id = button.data('id');
+        var namecontent = button.data('namecontent');
+        var content = button.data('content');
+        var userid = button.data('userid');
+
+        var modal = $(this);
+        modal.find('#editId').val(id);
+        modal.find('#editNameContent').val(namecontent);
+        modal.find('#editContent').val(content);
+        modal.find('#editUserId').val(userid);
+    });
+</script>

@@ -1,0 +1,165 @@
+﻿@model WebApplication1.Controllers.HomeController.AddStudentViewModel
+
+@{
+    ViewData["Title"] = "Thêm học sinh";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+    bool showConfirmation = ViewBag.ShowConfirmation != null && ViewBag.ShowConfirmation == true;
+}
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+<style>
+    .container {
+        margin-top: 20px;
+    }
+
+    .form-group label {
+        font-weight: bold;
+    }
+
+    .form-control.is-invalid {
+        border-color: #dc3545;
+    }
+
+    .invalid-feedback {
+        display: none;
+        color: #dc3545;
+    }
+
+    .form-control.is-invalid + .invalid-feedback {
+        display: block;
+    }
+
+    .form-header {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .confirmation-message {
+        color: #dc3545;
+        font-weight: bold;
+    }
+</style>
+
+<div class="container">
+    <h2 class="form-header">Thêm học sinh mới</h2>
+
+    @using (Html.BeginForm("AddStudent1", "Home", FormMethod.Post, new { @onsubmit = "return validateForm();" }))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-group">
+            @Html.Label("Họ Và Tên Học Sinh")
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", @required = "required" })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "invalid-feedback" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Số Điện Thoại Phụ Huynh")
+            @Html.TextBoxFor(model => model.SDTPH, new { @class = "form-control", @pattern = "\\d{10}", @title = "Số điện thoại phải là 10 ký tự số.", @required = "required", @onblur = "checkPhoneNumber();" })
+            @Html.ValidationMessageFor(model => model.SDTPH, "", new { @class = "invalid-feedback" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Ngày Sinh")
+            @Html.TextBoxFor(model => model.DateOfBirth, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date", @required = "required" })
+            @Html.ValidationMessageFor(model => model.DateOfBirth, "", new { @class = "invalid-feedback" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Họ Và Tên Phụ Huynh")
+            @Html.TextBoxFor(model => model.ParentName, new { @class = "form-control", @required = "required" })
+            @Html.ValidationMessageFor(model => model.ParentName, "", new { @class = "invalid-feedback" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Email")
+            @Html.TextBoxFor(model => model.ParentEmail, new { @class = "form-control", @type = "email", @required = "required" })
+            @Html.ValidationMessageFor(model => model.ParentEmail, "", new { @class = "invalid-feedback" })
+        </div>
+
+        <div class="form-group">
+            @Html.Label("Địa Chỉ")
+            @Html.TextBoxFor(model => model.ParentAddress, new { @class = "form-control", @required = "required" })
+            @Html.ValidationMessageFor(model => model.ParentAddress, "", new { @class = "invalid-feedback" })
+        </div>
+
+        @Html.HiddenFor(model => model.Year)
+        @Html.HiddenFor(model => model.ClassName)
+        @Html.HiddenFor(model => model.GradeId)
+
+        if (showConfirmation)
+        {
+            <div class="form-group">
+                <p class="confirmation-message">Phụ huynh với số điện thoại @ViewBag.ParentName đã tồn tại trong hệ thống. Liệu bạn có muốn sử dụng thông tin phụ huynh hiện tại?</p>
+                <div>
+                    <label><input type="radio" name="ParentConfirmation" value="yes" /> Đồng ý</label>
+                    <label><input type="radio" name="ParentConfirmation" value="no" checked /> Không</label>
+                </div>
+            </div>
+        }
+
+        <button type="submit" class="btn btn-primary"><i class="fas fa-plus"></i> Thêm học sinh</button>
+    }
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    function checkPhoneNumber() {
+        var phoneNumber = document.querySelector('[name="SDTPH"]').value;
+        if (phoneNumber.trim() === "") {
+            return;
+        }
+
+        $.ajax({
+            url: '@Url.Action("IsPhoneNumberAvailable", "Home")',
+            type: 'GET',
+            data: { phoneNumber: phoneNumber },
+            success: function (response) {
+                if (!response.isAvailable) {
+                    document.querySelector('[name="ParentConfirmation"]').value = "yes";
+                    $('[name="ParentName"]').val(response.parentName).prop('readonly', true);
+                    $('[name="ParentEmail"]').val(response.parentEmail).prop('readonly', true);
+                    $('[name="ParentAddress"]').val(response.parentAddress).prop('readonly', true);
+                    alert('Số Điện Thoại Phụ Huynh đã tồn tại. Sử dụng thông tin hiện tại.');
+                } else {
+                    document.querySelector('[name="ParentConfirmation"]').value = "no";
+                    $('[name="ParentName"]').val('').prop('readonly', false);
+                    $('[name="ParentEmail"]').val('').prop('readonly', false);
+                    $('[name="ParentAddress"]').val('').prop('readonly', false);
+                }
+            }
+        });
+    }
+
+    function validateForm() {
+        var isValid = true;
+
+        // Validate phone number pattern
+        var phoneNumber = document.querySelector('[name="SDTPH"]');
+        var phonePattern = /^\d{10}$/;
+        if (!phonePattern.test(phoneNumber.value)) {
+            phoneNumber.classList.add("is-invalid");
+            alert('Số Điện Thoại Phụ Huynh phải là 10 ký tự số.');
+            isValid = false;
+        } else {
+            phoneNumber.classList.remove("is-invalid");
+        }
+
+        // Check if all required fields are filled
+        var requiredFields = document.querySelectorAll('[required]');
+        requiredFields.forEach(function(field) {
+            if (!field.value.trim()) {
+                field.classList.add("is-invalid");
+                alert('Không được bỏ trống trường nào.');
+                isValid = false;
+                return false; // Exit the loop
+            } else {
+                field.classList.remove("is-invalid");
+            }
+        });
+
+        return isValid;
+    }
+</script>

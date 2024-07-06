@@ -1,0 +1,121 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+<style>
+    .profile--ds-info {
+        background-color: #ffffff; /* White background */
+        border: 1px solid #28a745; /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px; /* Padding for better spacing */
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333; /* Darker text color for better contrast */
+        font-size: 18px; /* Larger font size for readability */
+    }
+
+    .row {
+        margin-bottom: 20px; /* Consistent spacing between rows */
+    }
+
+    .mb-3 {
+        margin-bottom: 15px !important; /* Reduced margin for better spacing */
+    }
+
+    a {
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit text color */
+    }
+</style>
+<div class="container">
+    <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-3">
+            <a href="/Home/Timetable">
+                <div class="box-df profile--ds-info" style="height: 210px;">
+                    <div class="caption">
+                        <span class="caption-subject bold">Lịch Phổ Cập</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6 mb-3">
+            <div class="row">
+                <!-- Row 1 -->
+                <div class="col-md-12 mb-3">
+                    <a href="/Home/ThongBaoDaoTao">
+                        <div class="box-df profile--ds-info" style="height: 100px;">
+                            <div class="caption">
+                                <span class="caption-subject bold">Thông Báo</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Row 2 -->
+                <div class="col-md-6 mb-3">
+                    <a href="/Home/ListSubjects">
+                        <div class="box-df profile--ds-info" style="height: 85px;">
+                            <div class="caption">
+                                <span class="caption-subject bold">Giáo Viên</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <a href="/Home/GradeDaoTao">
+                        <div class="box-df profile--ds-info" style="height: 85px;">
+                            <div class="caption">
+                                <span class="caption-subject bold">Học Sinh</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-6 mb-3">
+            <a href="/Home/ListBoNhiem">
+                <div class="box-df profile--ds-info" style="height: 85px;">
+                    <div class="caption">
+                        <span class="caption-subject bold">Lớp</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <!-- Right Column -->
+        <div class="col-md-6 mb-3">
+            <a href="/Home/PhepNghi">
+                <div class="box-df profile--ds-info" style="height: 85px;">
+                    <div class="caption">
+                        <span class="caption-subject bold">Phep Nghi</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

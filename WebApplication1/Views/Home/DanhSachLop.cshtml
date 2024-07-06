@@ -1,0 +1,90 @@
+﻿@model List<WebApplication1.Models.StudentScoreViewModel>
+
+@{
+    ViewData["Title"] = "Danh Sách Lớp";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+    bool isCurrentClass = ViewBag.IsCurrentClass ?? true;
+}
+
+<div class="container my-4">
+    <h2 class="mb-4">Danh Sách Lớp - @ViewBag.ClassName</h2>
+    <h3>Giáo viên: @ViewBag.TeacherName</h3>
+    <h4>Môn: @ViewBag.Subject</h4>
+
+    @using (Html.BeginForm("DanhSachLop", "Home", FormMethod.Get))
+    {
+        @Html.Hidden("classId", (int)ViewBag.ClassId)
+        @Html.Hidden("teacherId", (int)ViewBag.TeacherId)
+
+        <div class="form-group">
+            @Html.Label("Chọn kỳ học:", new { @class = "form-label" })
+            @Html.DropDownList("semester", ViewBag.Semesters as SelectList, new { @class = "form-select", onchange = "this.form.submit();" })
+        </div>
+    }
+
+    @using (Html.BeginForm("UploadExcel", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        @Html.Hidden("classId", (int)ViewBag.ClassId)
+        @Html.Hidden("teacherId", (int)ViewBag.TeacherId)
+        @Html.Hidden("semester", (int)ViewBag.SelectedSemester)
+
+        <div class="form-group my-4">
+            <label for="excelFile" class="form-label">Tải lên file Excel:</label>
+            <input type="file" name="excelFile" id="excelFile" class="form-control" />
+        </div>
+        <input type="submit" value="Tải lên và cập nhật điểm" class="btn btn-success" />
+    }
+
+    @using (Html.BeginForm("UpdateScores", "Home", FormMethod.Post))
+    {
+        @Html.Hidden("classId", (int)ViewBag.ClassId)
+        @Html.Hidden("teacherId", (int)ViewBag.TeacherId)
+        @Html.Hidden("semester", (int)ViewBag.SelectedSemester)
+
+        <div class="table-responsive my-4">
+            <table class="table table-bordered table-striped table-hover">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Tên Sinh Viên</th>
+                        <th scope="col">Điểm Thường xuyên</th>
+                        <th scope="col">Điểm 15 Phút</th>
+                        <th scope="col">Điểm 60 Phút</th>
+                        <th scope="col">Điểm Giữa Kỳ</th>
+                        <th scope="col">Điểm Cuối Kỳ</th>
+                        <th scope="col">Điểm Tổng Kết</th>
+                        <th scope="col">Trạng Thái</th>
+                        <th scope="col">Học Kỳ</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Name</td>
+                            <td>@item.Scores</td>
+                            <td>@item.Score15</td>
+                            <td>@item.Score60</td>
+                            <td>@item.GiuaKi</td>
+                            <td>@item.CuoiKi</td>
+                            <td>@item.TongKet</td>
+                            <td>@item.Status</td>
+                            <td>@item.Semester</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+    }
+
+    <div class="form-group my-4">
+        <a href="@Url.Action("NhapDiemThuongXuyen", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester })" class="btn btn-primary mb-2 @(isCurrentClass ? "" : "disabled")">Nhập điểm thường xuyên</a>
+
+        <a href="@Url.Action("NhapDiem", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester, scoreType = "Score15" })" class="btn btn-success mb-2 @(isCurrentClass ? "" : "disabled")" data-toggle="tooltip" data-placement="top" title="Nhập điểm 15 phút">Nhập điểm 15 phút</a>
+        <a href="@Url.Action("NhapDiem60", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester, scoreType = "Score60" })" class="btn btn-success mb-2 @(isCurrentClass ? "" : "disabled")" data-toggle="tooltip" data-placement="top" title="Nhập điểm 60 phút">Nhập điểm 60 phút</a>
+        <a href="@Url.Action("NhapDiemGK", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester, scoreType = "GiuaKi" })" class="btn btn-success mb-2 @(isCurrentClass ? "" : "disabled")" data-toggle="tooltip" data-placement="top" title="Nhập điểm Giữa Kỳ">Nhập điểm Giữa Kỳ</a>
+        <a href="@Url.Action("NhapDiemCK", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester, scoreType = "CuoiKi" })" class="btn btn-success mb-2 @(isCurrentClass ? "" : "disabled")" data-toggle="tooltip" data-placement="top" title="Nhập điểm Cuối Kỳ">Nhập điểm Cuối Kỳ</a>
+        <a href="@Url.Action("ExportClassScoresToExcel", "Home", new { classId = (int)ViewBag.ClassId, teacherId = (int)ViewBag.TeacherId, semester = (int)ViewBag.SelectedSemester })" class="btn btn-info">Xuất danh sách lớp ra Excel</a>
+    </div>
+
+</div>

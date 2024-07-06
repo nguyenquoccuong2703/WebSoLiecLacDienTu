@@ -1,0 +1,85 @@
+﻿@{
+    ViewBag.Title = "Phụ Huynh";
+    Layout = "~/Views/Shared/_LayoutSoLienLacPhuHuynh.cshtml";
+}
+@model IEnumerable<WebApplication1.Models.StudentViewModel>
+
+<div class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="member">
+                    <img src="../layoutSoLienLacPH/img/th.jpg" alt="Member 2" class="member-img">
+                </div>
+
+                <h2 class="text-center mb-4">Thông Tin Học Sinh</h2>
+                @if (Model != null && Model.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">Họ và tên</th>
+                                    <th scope="col">Ngày sinh</th>
+                                    <th scope="col">Số điện thoại</th>
+                                    <th scope="col">Tên Lớp</th>
+                                    <th scope="col">Thông Tin Khác</th>
+                                    <th scope="col">Phép</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var student in Model)
+                                {
+                                    <tr>
+                                        <td>@student.Name</td>
+                                        <td>@(student.DateOfBirth is DateTime ? ((DateTime)student.DateOfBirth).ToString("dd/MM/yyyy") : student.DateOfBirth.ToString())</td>
+                                        <td>@student.SDTPH</td>
+                                        <td>@student.ClassName</td>
+                                        <td>
+                                            <a href="@Url.Action("ChiTietHocSinh", "Home", new { id = student.UserId })" class="btn btn-info btn-sm">Xem chi tiết</a>
+                                        </td>
+                                        <td>
+                                            <a href="@Url.Action("TaoDonXinPhep", "Home", new { studentId = student.StudentId })" class="btn btn-warning btn-sm">Xin phép nghỉ học</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p class="text-center">Không có thông tin học sinh.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .member-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .member-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .table thead th {
+        background-color: #343a40;
+        color: white;
+    }
+
+    .btn-info {
+        margin-right: 5px;
+    }
+
+    .btn-warning {
+        margin-left: 5px;
+    }
+</style>

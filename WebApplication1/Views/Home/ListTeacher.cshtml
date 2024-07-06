@@ -1,0 +1,114 @@
+﻿@model List<WebApplication1.Controllers.HomeController.ClassTeacherViewModel>
+
+@{
+    ViewData["Title"] = "Listteacher";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff;
+        border: 1px solid #28a745;
+        padding: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-df {
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333;
+        font-size: 18px;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .page-item {
+        margin: 0 5px;
+    }
+
+        .page-item a {
+            display: block;
+            padding: 10px 15px;
+            border: 1px solid #28a745;
+            color: #28a745;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+            .page-item a:hover {
+                background-color: #28a745;
+                color: white;
+            }
+
+        .page-item.active a {
+            background-color: #28a745;
+            color: white;
+        }
+</style>
+
+<div class="container mt-4">
+    <h2 class="mb-4">Danh sách giáo viên và năm học</h2>
+    <div class="row">
+        @foreach (var @class in Model)
+        {
+            <div class="col-md-6 mb-4">
+                <a href="@Url.Action("TeacherDetails", "Home", new { teacherId = @class.TeacherId, year = @class.AcademicYear })" class="text-decoration-none">
+                    <div class="box-df profile--ds-info">
+                        <div class="caption">
+                            <span class="caption-subject bold">@(@class.ClassName) - Năm học @(@class.AcademicYear)</span><br>
+                            <span class="text-muted">Giáo viên: @(@class.TeacherName)</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+            @if (ViewBag.PageNumber > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ListTeacher", new { pageNumber = ViewBag.PageNumber - 1 })" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            }
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(ViewBag.PageNumber == i ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("ListTeacher", new { pageNumber = i })">@i</a>
+                </li>
+            }
+            @if (ViewBag.PageNumber < ViewBag.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" href="@Url.Action("ListTeacher", new { pageNumber = ViewBag.PageNumber + 1 })" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

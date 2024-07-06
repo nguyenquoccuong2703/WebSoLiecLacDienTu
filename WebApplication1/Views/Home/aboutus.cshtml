@@ -1,0 +1,52 @@
+﻿@{
+    ViewData["Title"] = "About Us";
+    Layout = "~/Views/Shared/_LayoutSoLienLacPhuHuynh.cshtml";
+}
+
+<div class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Về chúng tôi</h2>
+                <div class="member-container">
+                    <div class="member">
+                        <img src="../layoutSoLienLacPH/img/này hinh Nam thần (kinh).jpg" alt="Member 1" class="member-img">
+                        <p class="member-name">Nguyễn Hoàng Nam</p>
+                    </div>
+                    <div class="member">
+                        <img src="../layoutSoLienLacPH/img/hehe.JPG" alt="Member 2" class="member-img">
+                        <p class="member-name">Đặng Nguyễn Công Hậu</p>
+                    </div>
+                    <div class="member">
+                        <img src="../layoutSoLienLacPH/img/này hình (cao)Cường.jpg" alt="Member 3" class="member-img">
+                        <p class="member-name">Nguyễn QUốc Cường</p>
+                        <p class="member-name">thuyền trưởng </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .member-container {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+
+    .member {
+        text-align: center;
+    }
+
+    .member-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .member-name {
+        font-weight: bold;
+    }
+</style>

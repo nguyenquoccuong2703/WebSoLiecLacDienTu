@@ -1,0 +1,251 @@
+﻿
+<!DOCTYPE html>
+<html lang="zxx">
+@using WebApplication1.Models;
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ogani Template">
+    <meta name="keywords" content="Ogani, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../layoutSoLienLacPH/css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Humberger Begin -->
+    <div class="humberger__menu__overlay"></div>
+
+    <!-- Humberger End -->
+    <!-- Header Section Begin -->
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__left">
+                            <ul>
+                                <li><i class="fa fa-envelope"></i> haudang2212@gmail.com</li>
+                                <li>Sổ liên lạc điện tử</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <div class="header__top__right">
+                            <div class="header__top__right__social">
+                                <a href="#"><i class="fa fa-facebook"></i></a>
+                                <a href="#"><i class="fa fa-twitter"></i></a>
+                                <a href="#"><i class="fa fa-linkedin"></i></a>
+                                <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            </div>
+                            <div class="header__top__right__auth">
+                                @if (Session["khach"] != null)
+                                {
+                                    User k = Session["khach"] as User;
+                                    <li class="nav-item"><span class="navbar-text">Chào Bạn! @k.Username</span></li>
+                                    <li class="nav-item"><a class="btn btn-info" href="/Home/DangXuat">Đăng xuất</a></li>
+                                }
+                                else
+                                {
+                                    <li class="nav-item"><a class="btn btn-info" href="/Home/DangNhap">Đăng Nhập</a></li>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="#"><img src="../layoutSoLienLacPH/img/Logo HUIT-03.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li class="active"><a href="#">Trang chủ</a></li>
+                            <li>
+                                <a href="#">Học tập</a>
+                                <ul class="header__menu__dropdown">
+                                    <li><a href="/Home/thoiKhoaBieu">Thời khóa biểu tuần</a></li>
+                                    <li><a href="/Home/ketQuaHocTap">kết quả học tập</a></li>
+                                    <li><a href="/Home/thongBao">Thông báo</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#lienhe">Liên hệ</a></li>
+                            <li><a href="#aboutus">Về chúng tôi</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+            <div class="humberger__open">
+                <i class="fa fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+    <!-- Hero Section Begin -->
+    <section class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="hero__categories">
+                        <div class="hero__categories__all">
+                            <i class="fa fa-bars"></i>
+                            <span>Thông tin</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">Thông tin học viên</a></li>
+                            <li><a href="/Home/thoiKhoaBieu">Thời khóa biểu trong tuần</a></li>
+                            <li><a href="/Home/ketQuaHocTap">Kết quả học tập</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="hero__text">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="aboutus" class="about-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Về chúng tôi</h2>
+                    <div class="member-container">
+                        <div class="member">
+                            <img src="../layoutSoLienLacPH/img/này hinh Nam thần (kinh).jpg" alt="Member 1" class="member-img">
+                            <p class="member-name">Nguyễn Hoàng Nam</p>
+                        </div>
+                        <div class="member">
+                            <img src="../layoutSoLienLacPH/img/hehe.JPG" alt="Member 2" class="member-img">
+                            <p class="member-name">Đặng Nguyễn Công Hậu</p>
+                        </div>
+                        <div class="member">
+                            <img src="../layoutSoLienLacPH/img/này hình (cao)Cường.jpg" alt="Member 3" class="member-img">
+                            <p class="member-name">Nguyễn QUốc Cường</p>
+                            <p class="member-name">thuyền trưởng </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .member-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .member {
+            text-align: center;
+        }
+
+        .member-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .member-name {
+            font-weight: bold;
+        }
+    </style>
+
+    <!-- Blog Section End -->
+    <!-- Footer Section Begin -->
+    <footer id="lienhe" class="footer spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-6">
+                    <div class="footer__about">
+                        <div class="footer__about__logo">
+                            <a href="./index.html"><img src="../layoutSoLienLacPH/img/Logo HUIT-03.png" alt=""></a>
+                        </div>
+                        <ul>
+                            <li>Địa chỉ: 140 Lê Trọng Tấn</li>
+                            <li>Số điện thoại: +65 11.188.888</li>
+                            <li>Email: haudang2212@gmail.com</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 offset-lg-1">
+                    <div class="footer__widget">
+                        <h6>Thông tin về chúng tôi</h6>
+                        <ul>
+                            <li><a></a>Đặng Nguyễn Công Hậu</li>
+                            <li><a>Nguyễn Quốc Cường</a></li>
+                            <li><a>Nguyễn Hoàng Nam</a></li>
+                        </ul>
+                        <ul>
+                            <li><a>2001207187</a></li>
+                            <li><a>2001207309</a></li>
+                            <li><a>2001207167</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
+                    <div class="footer__widget">
+                        <h6>Liên hệ</h6>
+                        <p>để lại mail để cập nhật thông tin mới sớm nhất.</p>
+                        <form action="#">
+                            <input type="text" placeholder="Enter your mail">
+                            <button type="submit" class="site-btn">đăng kí</button>
+                        </form>
+                        <div class="footer__widget__social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+    <!-- Js Plugins -->
+    <script src="../layoutSoLienLacPH/js/jquery-3.3.1.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/bootstrap.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/jquery.nice-select.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/jquery-ui.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/jquery.slicknav.js"></script>
+    <script src="../layoutSoLienLacPH/js/mixitup.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/owl.carousel.min.js"></script>
+    <script src="../layoutSoLienLacPH/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+</body>
+
+</html>

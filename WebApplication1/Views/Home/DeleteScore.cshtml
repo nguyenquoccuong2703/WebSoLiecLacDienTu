@@ -1,0 +1,74 @@
+﻿
+@{
+    ViewBag.Title = "DeleteScore";
+    Layout = "~/Views/Shared/_LayoutGiaoVien(txs).cshtml";
+}
+
+@model WebApplication1.Models.Score
+
+
+<h2>Xóa điểm</h2>
+
+<h3>Chắc chưa?</h3>
+<div>
+    <h4>ddiemre</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.SubjectTC)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SubjectTC)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Score15)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score15)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Score60)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Score60)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.GiuaKi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.GiuaKi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CuoiKi)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CuoiKi)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TongKet)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TongKet)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Semester)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Semester)
+        </dd>
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "ChiTietDiemGV", new { studentId = Model.StudentId, classId = Model.ClassId })
+        </div>
+    }
+</div>
+
+@*@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}*@
+

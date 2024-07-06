@@ -1,0 +1,150 @@
+﻿@model WebApplication1.Models.TeacherTimetableViewModel
+
+@{
+    ViewData["Title"] = "Xem Thời Khóa Biểu Giáo Viên";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+    DateTime currentDate = DateTime.Now;
+    DateTime startDate = Model.StartDate;
+    var weekdays = new[] { "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu" };
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Thời Khóa Biểu Giáo Viên</h2>
+    <h4 class="text-center mb-5">@Model.Teacher.Name</h4>
+
+    <input type="hidden" id="teacherId" value="@Model.Teacher.TeacherId" />
+
+    <div class="calendar-container text-center mb-5">
+        <div class="d-inline-block">
+            <label for="calendar" class="form-label me-3">Chọn ngày:</label>
+            <input type="date" id="calendar" name="calendar" class="form-control d-inline-block w-auto me-3" value="@startDate.ToString("yyyy-MM-dd")">
+
+            <div class="d-inline-block">
+                <button class="btn btn-secondary me-2" onclick="changeWeek(-1)">Tuần Trước</button>
+                <button class="btn btn-secondary" onclick="changeWeek(1)">Tuần Sau</button>
+            </div>
+        </div>
+    </div>
+    <div class="text-center mb-5">
+        <button class="btn btn-primary" onclick="confirmSchedule()">Xác nhận</button>
+    </div>
+
+    <!-- Timetable -->
+    <div class="table-responsive">
+        <table class="table table-bordered text-center table-hover">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Thời Gian</th>
+                    @for (int i = 0; i < 5; i++)
+                    {
+                        <th>
+                            @weekdays[i]
+                            <br />
+                            <span class="text-muted">@startDate.AddDays(i).ToString("dd/MM/yyyy")</span>
+                        </th>
+                    }
+                </tr>
+            </thead>
+            <tbody id="timetable">
+                @{
+                    var timeSlots = new List<(string Time, string Session)>
+                                                            {
+                        ("7:30 - 8:15", "Sáng"),
+                        ("8:15 - 9:00", ""),
+                        ("9:15 - 10:00", ""),
+                        ("10:00 - 10:45", ""),
+                        ("1:00 - 1:45", "Chiều"),
+                        ("1:45 - 2:30", ""),
+                        ("2:45 - 3:30", ""),
+                        ("3:30 - 4:15", "")
+                    };
+                }
+
+                @foreach (var slot in timeSlots)
+                {
+                    <tr>
+                        <td class="align-middle"><strong>@slot.Time</strong> <span class="badge bg-info">@slot.Session</span></td>
+                        @foreach (var day in weekdays)
+                        {
+                            var subject = Model.TimetableDetails.FirstOrDefault(t => t.Time == slot.Time && t.Weekday == Array.IndexOf(weekdays, day) + 2);
+                            <td>
+                                @if (subject != null)
+                                {
+                                    <div class="p-3 bg-light rounded">
+                                        <p class="mb-1 fw-bold text-primary">@subject.SubjectName</p>
+                                        <p class="mb-0 text-muted">@subject.ClassName</p>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div class="p-3 text-muted">Nghỉ</div>
+                                }
+                            </td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+    function changeWeek(offset) {
+        var currentDate = new Date(document.getElementById("calendar").value);
+        currentDate.setDate(currentDate.getDate() + (offset * 7));
+        document.getElementById("calendar").value = currentDate.toISOString().split('T')[0];
+        confirmSchedule();
+    }
+
+    function confirmSchedule() {
+        var selectedDate = document.getElementById("calendar").value;
+        var teacherId = document.getElementById("teacherId").value;
+
+        window.location.href = `/Home/XemThoiKhoaBieuGiaoVien?teacherId=${teacherId}&date=${selectedDate}`;
+    }
+</script>
+
+<style>
+    .calendar-container {
+        margin-bottom: 20px;
+    }
+
+    .form-label {
+        font-size: 1.2rem;
+        margin-right: 10px;
+    }
+
+    .form-control {
+        font-size: 1rem;
+    }
+
+    .table {
+        margin-top: 20px;
+    }
+
+    .thead-dark th {
+        background-color: #343a40;
+        color: white;
+        font-size: 1.1rem;
+    }
+
+    .table-hover tbody tr:hover {
+        background-color: #f1f1f1;
+    }
+
+    .btn {
+        width: 150px;
+    }
+
+    .text-primary {
+        color: #007bff !important;
+    }
+
+    .bg-light {
+        background-color: #f8f9fa !important;
+    }
+
+    .rounded {
+        border-radius: 0.25rem !important;
+    }
+</style>

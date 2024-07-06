@@ -1,0 +1,39 @@
+﻿@model List<WebApplication1.Models.LeaveRequest>
+
+@{
+    ViewBag.Title = "Danh Sách Đơn Xin Phép";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+}
+
+<h2>Danh Sách Đơn Xin Phép</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Lý do</th>
+                <th>Ngày xin phép</th>
+                <th>Trạng thái</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => request.Reason)</td>
+                    <td>@(request.RequestDate is DateTime ? ((DateTime)request.RequestDate).ToString("dd/MM/yyyy") : request.RequestDate.ToString())</td>
+                    <td>@Html.DisplayFor(modelItem => request.ApprovalStatus)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info" role="alert">
+        @ViewBag.Message
+    </div>
+}
+
+<a href="@Url.Action("TaoDonXinPhepGiaoVien", "Home")" class="btn btn-primary">Tạo Đơn Xin Phép Mới</a>

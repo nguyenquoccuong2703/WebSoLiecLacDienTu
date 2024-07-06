@@ -1,0 +1,243 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="soLienLac5" Class="db_sll2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.AcademicResults" Member="AcademicResults">
+    <Type Name="AcademicResult">
+      <Column Name="ResultId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcademicYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AnnualAvg" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Promotion" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="Classification" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AvgVietnamese" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgMathematics" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgEnglish" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgBiology" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgHistory" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgGeography" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgChemistry" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="AvgTechnology" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Grade_AcademicResult" Member="Grade" ThisKey="AcademicYear" OtherKey="GradeID" Type="Grade" IsForeignKey="true" />
+      <Association Name="Student_AcademicResult" Member="Student" ThisKey="StudentId" OtherKey="StudentId" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="UserId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Username" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Password" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="UserType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Chat" Member="Chats" ThisKey="UserId" OtherKey="UserId1" Type="Chat" />
+      <Association Name="User_Chat1" Member="Chats1" ThisKey="UserId" OtherKey="UserId2" Type="Chat" />
+      <Association Name="User_Message" Member="Messages" ThisKey="UserId" OtherKey="ReceiverId" Type="Message" />
+      <Association Name="User_Message1" Member="Messages1" ThisKey="UserId" OtherKey="SenderId" Type="Message" />
+      <Association Name="User_Parent" Member="Parents" ThisKey="UserId" OtherKey="UserId" Type="Parent" />
+      <Association Name="User_Staff" Member="Staffs" ThisKey="UserId" OtherKey="UserId" Type="Staff" />
+      <Association Name="User_Student" Member="Students" ThisKey="UserId" OtherKey="UserId" Type="Student" />
+      <Association Name="User_Teacher" Member="Teachers" ThisKey="UserId" OtherKey="UserId" Type="Teacher" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Chats" Member="Chats">
+    <Type Name="Chat">
+      <Column Name="ChatId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="UserId2" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="UserType1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserType2" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="User_Chat" Member="User" ThisKey="UserId1" OtherKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="User_Chat1" Member="User1" ThisKey="UserId2" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Classes" Member="Classes">
+    <Type Name="Class">
+      <Column Name="ClassId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClassName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcademicYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GradeId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Notification" Member="Notifications" ThisKey="ClassId" OtherKey="ClassId" Type="Notification" />
+      <Association Name="Class_Score" Member="Scores" ThisKey="ClassId" OtherKey="ClassId" Type="Score" />
+      <Association Name="Class_Student" Member="Students" ThisKey="ClassId" OtherKey="ClassId" Type="Student" />
+      <Association Name="Class_TeacherClassAssignment" Member="TeacherClassAssignments" ThisKey="ClassId" OtherKey="ClassId" Type="TeacherClassAssignment" />
+      <Association Name="Class_Timetable" Member="Timetables" ThisKey="ClassId" OtherKey="ClassId" Type="Timetable" />
+      <Association Name="Grade_Class" Member="Grade" ThisKey="GradeId" OtherKey="GradeID" Type="Grade" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="Teacher_Class" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Grades" Member="Grades">
+    <Type Name="Grade">
+      <Column Name="GradeID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Grade" Member="Grade1" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcademicYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Grade_AcademicResult" Member="AcademicResults" ThisKey="GradeID" OtherKey="AcademicYear" Type="AcademicResult" />
+      <Association Name="Grade_Class" Member="Classes" ThisKey="GradeID" OtherKey="GradeId" Type="Class" />
+      <Association Name="Grade_Score" Member="Scores" ThisKey="GradeID" OtherKey="GradeID" Type="Score" />
+      <Association Name="Grade_Student" Member="Students" ThisKey="GradeID" OtherKey="GradeID" Type="Student" />
+    </Type>
+  </Table>
+  <Table Name="dbo.LeaveRequests" Member="LeaveRequests">
+    <Type Name="LeaveRequest">
+      <Column Name="RequestId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Reason" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="RequestDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ApprovalStatus" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Student_LeaveRequest" Member="Student" ThisKey="StudentId" OtherKey="StudentId" Type="Student" IsForeignKey="true" />
+      <Association Name="Teacher_LeaveRequest" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Messages" Member="Messages">
+    <Type Name="Message">
+      <Column Name="MessageId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SenderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ReceiverId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SenderType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReceiverType" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="User_Message" Member="User" ThisKey="ReceiverId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+      <Association Name="User_Message1" Member="User1" ThisKey="SenderId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Notifications" Member="Notifications">
+    <Type Name="Notification">
+      <Column Name="NotificationId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserType" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SenderId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NameContent" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Content" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Timestamp" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Notification" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Parents" Member="Parents">
+    <Type Name="Parent">
+      <Column Name="ParentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Parent_ParentStudentRelationship" Member="ParentStudentRelationships" ThisKey="ParentId" OtherKey="ParentId" Type="ParentStudentRelationship" />
+      <Association Name="User_Parent" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParentStudentRelationship" Member="ParentStudentRelationships">
+    <Type Name="ParentStudentRelationship">
+      <Column Name="RelationshipId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ParentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Parent_ParentStudentRelationship" Member="Parent" ThisKey="ParentId" OtherKey="ParentId" Type="Parent" IsForeignKey="true" />
+      <Association Name="Student_ParentStudentRelationship" Member="Student" ThisKey="StudentId" OtherKey="StudentId" Type="Student" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Score" Member="Scores">
+    <Type Name="Score">
+      <Column Name="ScoreId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="StudentId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Scores" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="Score15" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="Score60" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="GiuaKi" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="CuoiKi" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="TongKet" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="SubjectTC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Semester" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="GradeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Grade_Score" Member="Grade" ThisKey="GradeID" OtherKey="GradeID" Type="Grade" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="Class_Score" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" />
+      <Association Name="Student_Score" Member="Student" ThisKey="StudentId" OtherKey="StudentId" Type="Student" IsForeignKey="true" />
+      <Association Name="Teacher_Score" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Staff" Member="Staffs">
+    <Type Name="Staff">
+      <Column Name="StaffId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Position" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Phone" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="User_Staff" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Students" Member="Students">
+    <Type Name="Student">
+      <Column Name="StudentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SDTPH" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="GradeID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Student_AcademicResult" Member="AcademicResults" ThisKey="StudentId" OtherKey="StudentId" Type="AcademicResult" />
+      <Association Name="Student_LeaveRequest" Member="LeaveRequests" ThisKey="StudentId" OtherKey="StudentId" Type="LeaveRequest" />
+      <Association Name="Student_ParentStudentRelationship" Member="ParentStudentRelationships" ThisKey="StudentId" OtherKey="StudentId" Type="ParentStudentRelationship" />
+      <Association Name="Student_Score" Member="Scores" ThisKey="StudentId" OtherKey="StudentId" Type="Score" />
+      <Association Name="Grade_Student" Member="Grade" ThisKey="GradeID" OtherKey="GradeID" Type="Grade" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="Class_Student" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" DeleteRule="SET NULL" />
+      <Association Name="User_Student" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Subject" Member="Subjects">
+    <Type Name="Subject">
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubjectName" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="Subject_SubjectTeacher" Member="SubjectTeachers" ThisKey="SubjectId" OtherKey="SubjectId" Type="SubjectTeacher" />
+    </Type>
+  </Table>
+  <Table Name="dbo.SubjectTeacher" Member="SubjectTeachers">
+    <Type Name="SubjectTeacher">
+      <Column Name="SubjectTeacherId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubjectId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Subject_SubjectTeacher" Member="Subject" ThisKey="SubjectId" OtherKey="SubjectId" Type="Subject" IsForeignKey="true" />
+      <Association Name="Teacher_SubjectTeacher" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Teacher" Member="Teachers">
+    <Type Name="Teacher">
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SubjectTC" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="SDT" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Association Name="Teacher_Class" Member="Classes" ThisKey="TeacherId" OtherKey="TeacherId" Type="Class" />
+      <Association Name="Teacher_LeaveRequest" Member="LeaveRequests" ThisKey="TeacherId" OtherKey="TeacherId" Type="LeaveRequest" />
+      <Association Name="Teacher_Score" Member="Scores" ThisKey="TeacherId" OtherKey="TeacherId" Type="Score" />
+      <Association Name="Teacher_SubjectTeacher" Member="SubjectTeachers" ThisKey="TeacherId" OtherKey="TeacherId" Type="SubjectTeacher" />
+      <Association Name="Teacher_TeacherClassAssignment" Member="TeacherClassAssignments" ThisKey="TeacherId" OtherKey="TeacherId" Type="TeacherClassAssignment" />
+      <Association Name="Teacher_Timetable" Member="Timetables" ThisKey="TeacherId" OtherKey="TeacherId" Type="Timetable" />
+      <Association Name="User_Teacher" Member="User" ThisKey="UserId" OtherKey="UserId" Type="User" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TeacherClassAssignment" Member="TeacherClassAssignments">
+    <Type Name="TeacherClassAssignment">
+      <Column Name="AssignmentId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IsHeadTeacher" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AcademicYear" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_TeacherClassAssignment" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" />
+      <Association Name="Teacher_TeacherClassAssignment" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Timetable" Member="Timetables">
+    <Type Name="Timetable">
+      <Column Name="TimetableId" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="ClassId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Weekdays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Times" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="TeacherId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Class_Timetable" Member="Class" ThisKey="ClassId" OtherKey="ClassId" Type="Class" IsForeignKey="true" />
+      <Association Name="Teacher_Timetable" Member="Teacher" ThisKey="TeacherId" OtherKey="TeacherId" Type="Teacher" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+</Database>

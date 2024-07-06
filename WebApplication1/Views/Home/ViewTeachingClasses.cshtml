@@ -1,0 +1,88 @@
+﻿@model WebApplication1.Controllers.HomeController.ViewTeachingClassesViewModel
+
+@{
+    ViewData["Title"] = "Lớp Đang Dạy";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .container {
+        margin-top: 20px;
+    }
+
+    .class-list-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+        .class-list-header h2 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #007bff;
+        }
+
+    .class-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .class-list li {
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1.2em;
+            color: #333;
+            transition: background-color 0.3s;
+        }
+
+            .class-list li:hover {
+                background-color: #e9ecef;
+            }
+
+    .no-classes {
+        font-size: 1.2em;
+        color: #dc3545;
+        text-align: center;
+        margin-top: 20px;
+    }
+</style>
+
+<div class="container">
+    <div class="class-list-header">
+        <h2>Lớp Đang Dạy của Giáo viên @Model.TeacherName</h2>
+    </div>
+    @if (Model.TeachingClasses.Any())
+    {
+        <ul class="class-list">
+            @foreach (var classInfo in Model.TeachingClasses.Distinct())
+            {
+                <li>@classInfo.ClassName</li>
+            }
+        </ul>
+    }
+    else
+    {
+        <p class="no-classes">Hiện tại chưa dạy lớp nào.</p>
+    }
+
+    <div class="assignment-box">
+        <div class="assignment-header">Thêm Lớp Dạy</div>
+        <div class="assignment-body">
+            <form asp-action="AssignTeachingClass" method="post">
+                <input type="hidden" name="teacherId" value="@Model.TeacherId" />
+                <div class="form-group">
+                    <label for="classId">Chọn lớp:</label>
+                    <select class="form-control" id="classId" name="classId" required>
+                        @foreach (var classInfo in Model.AvailableClasses)
+                        {
+                            <option value="@classInfo.ClassId">@classInfo.ClassName</option>
+                        }
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Thêm</button>
+            </form>
+        </div>
+    </div>
+</div>

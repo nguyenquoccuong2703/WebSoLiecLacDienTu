@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Sửa Điểm";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+    var score = ViewBag.Score;
+    var studentName = ViewBag.StudentName;
+}
+
+<h2>Sửa Điểm Cho Học Sinh: @studentName</h2>
+
+<form action="@Url.Action("SuaDiem", "Home")" method="post">
+    <input type="hidden" name="scoreId" value="@score.ScoreId" />
+
+    <div class="form-group">
+        <label for="score15">Điểm 15 Phút</label>
+        <input type="number" step="0.01" name="score15" class="form-control" value="@score.Score15" required />
+    </div>
+    <div class="form-group">
+        <label for="score60">Điểm 60 Phút</label>
+        <input type="number" step="0.01" name="score60" class="form-control" value="@score.Score60" required />
+    </div>
+    <div class="form-group">
+        <label for="giuaKi">Điểm Giữa Kỳ</label>
+        <input type="number" step="0.01" name="giuaKi" class="form-control" value="@score.GiuaKi" required />
+    </div>
+    <div class="form-group">
+        <label for="cuoiKi">Điểm Cuối Kỳ</label>
+        <input type="number" step="0.01" name="cuoiKi" class="form-control" value="@score.CuoiKi" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a href="@Url.Action("DiemTrongLop", "Home", new { classId = score.ClassId })" class="btn btn-secondary">Hủy</a>
+</form>
+

@@ -1,0 +1,148 @@
+﻿@model IEnumerable<WebApplication1.Controllers.HomeController.LeaveRequestViewModel2>
+
+@{
+    ViewData["Title"] = "Phép nghỉ Học sinh";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff;
+        border: 1px solid #28a745;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333;
+        font-size: 18px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    .mb-3 {
+        margin-bottom: 15px !important;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #28a745;
+        padding: 10px;
+        text-align: left;
+        vertical-align: top;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+
+    .reason-cell {
+        max-width: 300px;
+        word-wrap: break-word;
+    }
+</style>
+
+<div class="container">
+    <h2>Danh sách yêu cầu phép nghỉ của học sinh</h2>
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+    <table class="table">
+        <thead>
+        <th>Học sinh - Lớp - Năm học</th>
+        <th>Lý do</th>
+        <th>Ngày yêu cầu</th>
+        <th>Trạng thái duyệt</th>
+        <th>Xác nhận</th>
+        </tr>
+        </thead>
+        <tbody>
+            @foreach (var request in Model)
+            {
+                <tr>
+                    <td>@request.StudentName - @request.ClassName - @request.AcademicYear</td>
+                    <td class="reason-cell">@request.Reason</td>
+                    <td>@request.RequestDate</td>
+                    <td>@request.ApprovalStatus</td>
+                    <td>
+                        @if (request.ApprovalStatus == "Chưa giải quyết")
+                        {
+                            <button class="btn btn-success" onclick="confirmApproval(@request.RequestId, 'OK')">OK</button>
+                            <button class="btn btn-danger" onclick="confirmApproval(@request.RequestId, 'NO')">NO</button>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <div class="pagination-container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center">
+                @for (int i = 1; i <= ViewBag.TotalPages; i++)
+                {
+                    <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("PhepNghiGiaoVien", new { page = i })">@i</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </div>
+</div>
+
+<script>
+    function confirmApproval(requestId, status) {
+        if (confirm('Bạn có chắc chắn muốn cập nhật yêu cầu này không?')) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("UpdateApprovalStatus2", "Home")',
+                data: {
+                    requestId: requestId,
+                    status: status
+                },
+                success: function () {
+                    location.reload();
+                },
+                error: function () {
+                    alert('Có lỗi xảy ra khi cập nhật trạng thái.');
+                }
+            });
+        }
+    }
+</script>

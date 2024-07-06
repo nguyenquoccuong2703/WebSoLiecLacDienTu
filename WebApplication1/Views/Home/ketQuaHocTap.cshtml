@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "ketQuaHocTap";
+    Layout = "~/Views/Shared/_LayoutDungChung.cshtml";
+}
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bảng điểm</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .select-year {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bảng điểm</h2>
+
+    <div class="select-year">
+        <label for="year">Chọn năm học:</label>
+        <select id="year" name="year">
+            <option value="2022">Năm học 2022</option>
+            <option value="2023">Năm học 2023</option>
+            <option value="2024">Năm học 2024</option>
+        </select>
+        <button onclick="showScore()">Xem bảng điểm</button>
+    </div>
+
+    <table id="scoreTable">
+        <thead>
+            <tr>
+                <th>Số thứ tự</th>
+                <th>Mã môn học</th>
+                <th>Tên môn học</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <script>
+        function showScore() {
+            var selectedYear = document.getElementById("year").value;
+            var data = fetchData(selectedYear);
+            updateTable(data);
+        }
+
+        function fetchData(year) {
+            if (year === "2022") {
+                return [
+                                        // Dữ liệu cho năm học 2023
+
+                ];
+            } else if (year === "2023") {
+                return [
+                    // Dữ liệu cho năm học 2023
+                ];
+            } else if (year === "2024") {
+                return [
+                    // Dữ liệu cho năm học 2024
+                ];
+            }
+            return [];
+        }
+
+        function updateTable(data) {
+            var tableBody = document.querySelector("#scoreTable tbody");
+            tableBody.innerHTML = ""; 
+
+            if (data.length === 0) {
+                tableBody.innerHTML = "<tr><td colspan='3'>Không có dữ liệu</td></tr>";
+            } else {
+                data.forEach(function (item, index) {
+                    var row = "<tr>";
+                    row += "<td>" + item.number + "</td>";
+                    row += "<td>" + item.code + "</td>";
+                    row += "<td>" + item.name + "</td>";
+                    row += "</tr>";
+                    tableBody.innerHTML += row;
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>

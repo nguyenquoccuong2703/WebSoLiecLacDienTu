@@ -1,0 +1,120 @@
+﻿@{
+    ViewData["Title"] = "Trang Chủ Giáo Viên";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+    var pastClasses = ViewBag.PastClasses as Dictionary<WebApplication1.Models.Class, string>;
+    var currentClasses = ViewBag.CurrentClasses as Dictionary<WebApplication1.Models.Class, string>;
+}
+
+<style>
+    .dropdown-highlight {
+        background-color: lightgreen;
+    }
+
+    .card-title {
+        margin-bottom: 0;
+    }
+
+    .card-header {
+        padding: 10px 15px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .select-container {
+        position: relative;
+    }
+
+    .custom-select {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ced4da;
+    }
+
+        .custom-select:hover {
+            cursor: pointer;
+        }
+</style>
+
+<script>
+    function handleClassChange(value) {
+        if (value) {
+            window.location.href = value;
+        }
+    }
+</script>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col text-center">
+            <h2 class="mb-4">Chào mừng, @ViewBag.TeacherName</h2>
+            <p class="lead">Bạn đang giảng dạy môn: <strong>@ViewBag.Subject</strong></p>
+        </div>
+    </div>
+
+    <div class="row mb-4 justify-content-center">
+        <div class="col-auto">
+            <div class="btn-group" role="group" aria-label="Teacher actions">
+                <a href="@Url.Action("XemThoiKhoaBieuGiaoVien", "Home", new { teacherId = ViewBag.TeacherId })" class="btn btn-primary">Xem Thời Khóa Biểu</a>
+                <a href="@Url.Action("DanhSachDonXinPhep", "Home", new { teacherId = ViewBag.TeacherId })" class="btn btn-primary">Xem Đơn xin phép</a>
+                <a href="@Url.Action("TaoDonXinPhepGiaoVien", "Home", new { teacherId = ViewBag.TeacherId })" class="btn btn-warning">Tạo Đơn Xin Phép</a>
+                <a href="@Url.Action("DanhSachDonXinPhepGiaoVien", "Home", new { teacherId = ViewBag.TeacherId })" class="btn btn-success">Đơn xin phép giáo viên</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="card-title">Các lớp đã dạy</h3>
+                </div>
+                <div class="card-body">
+                    <div class="select-container">
+                        <select class="custom-select" onchange="handleClassChange(this.value);">
+                            @if (pastClasses != null && pastClasses.Any())
+                            {
+                                foreach (var kvp in pastClasses)
+                                {
+                                    <option class="@(kvp.Value.Contains("chủ nhiệm") ? "dropdown-highlight" : "")" value="@Url.Action("DanhSachLop", "Home", new { classId = kvp.Key.ClassId, teacherId = ViewBag.TeacherId, isCurrentClass = false })">@kvp.Value</option>
+                                }
+                            }
+                            else
+                            {
+                                <option>Không có lớp nào đã dạy trong quá khứ.</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mb-4">
+            <div class="card">
+                <div class="card-header bg-success text-white">
+                    <h3 class="card-title">Các lớp đang dạy</h3>
+                </div>
+                <div class="card-body">
+                    <div class="select-container">
+                        <select class="custom-select" onchange="handleClassChange(this.value);">
+                            @if (currentClasses != null && currentClasses.Any())
+                            {
+                                foreach (var kvp in currentClasses)
+                                {
+                                    <option class="@(kvp.Value.Contains("chủ nhiệm") ? "dropdown-highlight" : "")" value="@Url.Action("DanhSachLop", "Home", new { classId = kvp.Key.ClassId, teacherId = ViewBag.TeacherId, isCurrentClass = true })">@kvp.Value</option>
+                                }
+                            }
+                            else
+                            {
+                                <option>Không có lớp nào đang dạy.</option>
+                            }
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

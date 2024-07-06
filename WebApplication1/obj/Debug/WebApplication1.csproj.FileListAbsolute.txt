@@ -1,0 +1,833 @@
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\KL_SLLDT\KL_SLLDT\WebApplication1\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Đồ án chuyên ngành\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\EPPlus.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\EPPlus.Interfaces.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\EPPlus.System.Drawing.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Buffers.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.ComponentModel.Annotations.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Memory.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\EPPlus.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Buffers.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Memory.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.dll
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.xml
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.pdb
+C:\Đồ án chuyên ngành\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Http.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Net.Sockets.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.Interfaces.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.System.Drawing.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.ComponentModel.Annotations.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\ngoci\OneDrive\Desktop\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Buffers.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Memory.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Numerics.Vectors.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.Interfaces.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.System.Drawing.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ComponentModel.Annotations.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.pdb
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.pdb
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Users\nguye\Downloads\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Buffers.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Memory.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Numerics.Vectors.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.Interfaces.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.System.Drawing.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ComponentModel.Annotations.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.pdb
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.pdb
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+C:\Đồ án chuyên ngành\OnlineBook-master\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.CurrentVersions.targets
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Buffers.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Memory.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Numerics.Vectors.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Runtime.CompilerServices.Unsafe.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.Interfaces.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.System.Drawing.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ComponentModel.Annotations.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\WebGrease.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\EPPlus.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.pdb
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.pdb
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\ExcelDataReader.DataSet.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Bcl.AsyncInterfaces.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.FileExtensions.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Configuration.Json.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileProviders.Physical.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.FileSystemGlobbing.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.Extensions.Primitives.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Microsoft.IO.RecyclableMemoryStream.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Buffers.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Memory.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Numerics.Vectors.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Runtime.CompilerServices.Unsafe.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Security.Cryptography.Pkcs.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encoding.CodePages.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Encodings.Web.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Text.Json.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Threading.Tasks.Extensions.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.ValueTuple.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebAppli.7D14BD69.Up2Date
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\New folder\SLL\SLL\SLL\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

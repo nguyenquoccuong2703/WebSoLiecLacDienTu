@@ -1,0 +1,271 @@
+﻿@model WebApplication1.Controllers.HomeController.TeacherAssignmentViewModel
+
+@{
+    ViewData["Title"] = "DetailsTeacher";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+    bool isHomeroomTeacherThisYear = ViewBag.IsHomeroomTeacherThisYear != null && (bool)ViewBag.IsHomeroomTeacherThisYear;
+}
+
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<style>
+    .profile-header {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .profile-title {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: #007bff;
+    }
+
+    .profile-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .profile-info {
+        font-size: 1.2em;
+        color: #333;
+    }
+
+        .profile-info .row {
+            margin-bottom: 15px;
+        }
+
+            .profile-info .row .col-4 {
+                font-weight: bold;
+                color: #007bff;
+            }
+
+    .assignment-box {
+        margin-top: 30px;
+    }
+
+    .assignment-header {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .assignment-body {
+        background-color: #f8f9fa;
+        border: 1px solid #dee2e6;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .no-classes {
+        font-size: 1em;
+        color: #dc3545;
+    }
+
+    .class-list ul {
+        padding-left: 20px;
+        list-style-type: disc;
+    }
+
+    .delete-button {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .assign-button {
+        margin-top: 10px;
+        display: inline-block;
+    }
+
+    .alert {
+        margin-top: 20px;
+    }
+
+    .btn-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px;
+    }
+
+        .btn-icon i {
+            margin-right: 6px;
+        }
+</style>
+
+<div class="container">
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success">@TempData["Message"]</div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">@TempData["Error"]</div>
+    }
+
+    <div class="profile-header">
+        <h2 class="profile-title">Chi tiết của @Model.TeacherName</h2>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="profile-card">
+                <div class="profile-info">
+                    <div class="row">
+                        <div class="col-4">Tên:</div>
+                        <div class="col-8">@Model.TeacherName</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Số điện thoại:</div>
+                        <div class="col-8">@Model.PhoneNumber</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Tài khoản:</div>
+                        <div class="col-8">@Model.Username</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Môn dạy:</div>
+                        <div class="col-8">@Model.Subject</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">Địa Chỉ:</div>
+                        <div class="col-8">@Model.Address</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <div class="assignment-header">Lớp chủ nhiệm</div>
+        <div class="assignment-body class-list">
+            @if (Model.HomeroomClasses != null && Model.HomeroomClasses.Any())
+            {
+                <ul>
+                    @foreach (var homeroomClass in Model.HomeroomClasses)
+                    {
+                        <li>
+                            @homeroomClass.ClassName - Năm học: @homeroomClass.AcademicYear
+                            <form action="@Url.Action("RemoveHomeroomAssignment", "Home")" method="post" class="d-inline">
+                                <input type="hidden" name="teacherId" value="@Model.TeacherId" />
+                                <input type="hidden" name="classId" value="@homeroomClass.ClassId" />
+                                <button type="submit" class="btn btn-danger btn-sm btn-icon">
+                                    <i class="fas fa-trash-alt"></i> Xóa bổ nhiệm
+                                </button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="no-classes">Không có lớp chủ nhiệm</p>
+            }
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <div class="assignment-header">Lớp khả dụng cho bổ nhiệm làm chủ nhiệm năm hiện tại</div>
+        <div class="assignment-body">
+            @if (Model.AvailableHomeroomClasses != null && Model.AvailableHomeroomClasses.Any())
+            {
+                <form action="@Url.Action("AssignHomeroomTeacher", "Home")" method="post">
+                    <div class="form-group">
+                        <label for="homeroomClassId">Chọn lớp:</label>
+                        <select class="form-control" id="homeroomClassId" name="classId" @(isHomeroomTeacherThisYear ? "disabled" : "")>
+                            @foreach (var availableClass in Model.AvailableHomeroomClasses)
+                            {
+                                <option value="@availableClass.ClassId">@availableClass.ClassName - Năm học: @availableClass.AcademicYear</option>
+                            }
+                        </select>
+                    </div>
+                    <input type="hidden" name="teacherId" value="@Model.TeacherId" />
+                    <button type="submit" class="btn btn-primary btn-icon" @(isHomeroomTeacherThisYear ? "disabled" : "")>
+                        <i class="fas fa-plus"></i> Bổ nhiệm làm chủ nhiệm
+                    </button>
+                </form>
+            }
+            else
+            {
+                <p class="no-classes">Không có lớp khả dụng cho bổ nhiệm làm chủ nhiệm năm hiện tại</p>
+            }
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <div class="assignment-header">Lớp dạy</div>
+        <div class="assignment-body class-list">
+            @if (Model.TeachingClasses != null && Model.TeachingClasses.Any())
+            {
+                <ul>
+                    @foreach (var teachingClass in Model.TeachingClasses)
+                    {
+                        <li>
+                            @teachingClass.ClassName - Năm học: @teachingClass.AcademicYear
+                            <form action="@Url.Action("RemoveTeachingAssignment", "Home")" method="post" class="d-inline">
+                                <input type="hidden" name="teacherId" value="@Model.TeacherId" />
+                                <input type="hidden" name="classId" value="@teachingClass.ClassId" />
+                                <button type="submit" class="btn btn-danger btn-sm btn-icon">
+                                    <i class="fas fa-trash-alt"></i> Xóa bổ nhiệm
+                                </button>
+                            </form>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="no-classes">Không có lớp dạy</p>
+            }
+        </div>
+    </div>
+
+    <div class="assignment-box">
+        <div class="assignment-header">Lớp khả dụng cho bổ nhiệm dạy lớp năm hiện tại</div>
+        <div class="assignment-body">
+            @if (Model.AvailableTeachingClasses != null && Model.AvailableTeachingClasses.Any())
+            {
+                <form action="@Url.Action("AssignTeachingClass", "Home")" method="post">
+                    <div class="form-group">
+                        <label for="teachingClassId">Chọn lớp:</label>
+                        <select class="form-control" id="teachingClassId" name="classId">
+                            @foreach (var availableClass in Model.AvailableTeachingClasses)
+                            {
+                                <option value="@availableClass.ClassId">@availableClass.ClassName - Năm học: @availableClass.AcademicYear</option>
+                            }
+                        </select>
+                    </div>
+                    <input type="hidden" name="teacherId" value="@Model.TeacherId" />
+                    <button type="submit" class="btn btn-secondary btn-icon">
+                        <i class="fas fa-plus"></i> Bổ nhiệm dạy lớp
+                    </button>
+                </form>
+            }
+            else
+            {
+                <p class="no-classes">Không có lớp khả dụng cho bổ nhiệm dạy lớp năm hiện tại</p>
+            }
+        </div>
+    </div>
+
+    <div class="delete-button">
+        <form action="@Url.Action("DeleteTeacher", "Home")" method="post">
+            <input type="hidden" name="id" value="@Model.TeacherId" />
+            <input type="hidden" name="subjectName" value="@Model.Subject" />
+            <button type="submit" class="btn btn-danger btn-icon" onclick="return confirm('Bạn có chắc chắn muốn xóa giáo viên này không?');">
+                <i class="fas fa-trash-alt"></i> Xóa
+            </button>
+        </form>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>

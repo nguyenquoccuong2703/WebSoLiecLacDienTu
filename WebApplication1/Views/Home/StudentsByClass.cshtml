@@ -1,0 +1,103 @@
+﻿@model WebApplication1.Controllers.HomeController.StudentsByClassViewModel
+
+@{
+    ViewData["Title"] = "Students";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+    int currentYear = DateTime.Now.Year;
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff;
+        border: 1px solid #28a745;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333;
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th, td {
+        border: 1px solid #28a745;
+        padding: 10px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+
+<div class="container">
+    <h2>Danh sách học sinh của lớp @Model.ClassName Năm @Model.Year</h2>
+    <div class="row">
+        @if (Model.Year == currentYear)
+        {
+            <div class="col-md-12 mb-3">
+                <a href="@Url.Action("AddStudent1", "Home", new { year = Model.Year, className = Model.ClassName })" class="btn btn-primary">Thêm học sinh</a>
+            </div>
+        }
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên</th>
+                <th>SDTPH</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.Students)
+            {
+                <tr>
+                    <td>
+                        <a href="@Url.Action("StudentDetail2", "Home", new { studentId = student.StudentId, year = Model.Year, className = Model.ClassName })">
+                            @student.Name
+                        </a>
+                    </td>
+                    <td>@student.SDTPH</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

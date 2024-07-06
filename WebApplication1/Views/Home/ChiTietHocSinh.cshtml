@@ -1,0 +1,46 @@
+﻿@model WebApplication1.Models.Student
+
+@{
+    ViewData["Title"] = "Chi Tiết Học Sinh";
+    Layout = "~/Views/Shared/_LayoutChiTietHocSinh.cshtml";
+}
+
+<div class="about-us">
+    <div class="container mt-4">
+        <h2 class="text-center mb-4">Chi Tiết Học Sinh</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <p><strong>Mã sinh viên: </strong> @Model.StudentId</p>
+                        <p><strong>Tên sinh viên: </strong> @Model.Name</p>
+                        <p><strong>Ngày Sinh: </strong>@(Model.DateOfBirth is DateTime ? ((DateTime)Model.DateOfBirth).ToString("dd/MM/yyyy") : Model.DateOfBirth.ToString()) </p>
+                        <p><strong>Lớp: </strong> @ViewBag.ClassName</p>
+                        <p><strong>Số Điện Thoại Phụ huynh: </strong> @Model.SDTPH</p>
+
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="@Url.Action("ChiTietDiem", "Home", new { id = Model.StudentId })" class="btn btn-primary mb-2">Xem điểm</a>
+                    <a href="@Url.Action("XemThoiKhoaBieu", "Home", new { id = Model.ClassId })" class="btn btn-primary mb-2">Xem Thời Khóa Biểu</a>
+                    <a href="@Url.Action("DanhSachDonXinPhepPhuHuynh", "Home", new { studentId = Model.StudentId })" class="btn btn-primary mb-2">Xem Đơn Xin Phép</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border: 1px solid #ddd;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 200px;
+    }
+</style>

@@ -1,0 +1,105 @@
+﻿@model IEnumerable<WebApplication1.Models.Class>
+
+@{
+    ViewData["Title"] = "Danh Sách Lớp Học Năm Học @ViewBag.AcademicYear";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff; /* White background */
+        border: 1px solid #28a745; /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px; /* Padding for better spacing */
+        margin-bottom: 20px; /* Consistent margin for spacing */
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333; /* Darker text color for better contrast */
+        font-size: 20px; /* Larger font size for readability */
+    }
+
+    .container {
+        margin-top: 20px; /* Spacing from the top */
+    }
+
+    .row {
+        margin-bottom: 20px; /* Consistent spacing between rows */
+    }
+
+    a {
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit text color */
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .page-link {
+        padding: 10px 15px;
+        margin: 0 5px;
+        border: 1px solid #28a745;
+        color: #28a745;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+
+        .page-link:hover {
+            background-color: #28a745;
+            color: #fff;
+        }
+
+        .page-link.active {
+            background-color: #28a745;
+            color: #fff;
+        }
+</style>
+
+<div class="container">
+    <h2>Danh Sách Lớp Học Năm Học @ViewBag.AcademicYear</h2>
+    <div class="row">
+        @foreach (var classItem in Model)
+        {
+            <div class="col-md-6 mb-3">
+                <a href="@Url.Action("ViewTimetablesByClass", "Home", new { classId = classItem.ClassId })">
+                    <div class="box-df profile--ds-info">
+                        <div class="caption">
+                            <span class="caption-subject bold">@classItem.ClassName</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+
+    <div class="pagination">
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <a class="page-link @(i == ViewBag.CurrentPage ? "active" : "")" href="@Url.Action("ViewClassesByYear", new { academicYear = ViewBag.AcademicYear, page = i })">
+                @i
+            </a>
+        }
+    </div>
+</div>

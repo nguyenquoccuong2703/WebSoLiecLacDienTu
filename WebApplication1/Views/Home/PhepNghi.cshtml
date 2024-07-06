@@ -1,0 +1,75 @@
+﻿@{
+    ViewData["Title"] = "Phép nghỉ";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff;
+        border: 1px solid #28a745;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333;
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+
+<div class="container">
+    <h2>Phép nghỉ</h2>
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <a href="@Url.Action("PhepNghiGiaoVien", "Home")">
+                <div class="box-df profile--ds-info">
+                    <div class="caption">
+                        <span class="caption-subject bold">Giáo viên</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 mb-3">
+            <a href="@Url.Action("PhepNghiHocSinh", "Home")">
+                <div class="box-df profile--ds-info">
+                    <div class="caption">
+                        <span class="caption-subject bold">Học sinh</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

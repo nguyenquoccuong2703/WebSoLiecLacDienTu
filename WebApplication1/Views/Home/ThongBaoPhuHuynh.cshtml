@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebApplication1.Models.Notification>
+
+@{
+    ViewBag.Title = "Thông Báo Phụ Huynh";
+    Layout = "~/Views/Shared/_LayoutDungChung.cshtml";
+}
+
+<h3 class="text-center text-uppercase py-3">Thông Báo Phụ Huynh</h3>
+<div class="table-responsive">
+    <table class="table table-hover table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Thông báo</th>
+                <th scope="col">Ngày đăng</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model != null)
+            {
+                for (var i = 0; i < Model.Count(); i++)
+                {
+                    var collapseId = "collapse" + i;
+                    var k = Model.ElementAt(i);
+                    <tr>
+                        <td>
+                            <a href="javascript:void(0)" onclick="toggleDetail('@collapseId')">@k.NameContent</a>
+                        </td>
+                        <td>@(k.Timestamp is DateTime ? ((DateTime)k.Timestamp).ToString("dd/MM/yyyy") : k.Timestamp.ToString())</td>
+                    </tr>
+                    <tr class="detail-row collapse" id="@collapseId">
+                        <td colspan="2">@k.Content</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="2">No data available</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<script>
+    function toggleDetail(collapseId) {
+        var detailRow = document.getElementById(collapseId);
+        if (detailRow.classList.contains('show')) {
+            detailRow.classList.remove('show');
+        } else {
+            var allDetailRows = document.getElementsByClassName('detail-row');
+            for (var i = 0; i < allDetailRows.length; i++) {
+                allDetailRows[i].classList.remove('show');
+            }
+            detailRow.classList.add('show');
+        }
+    }
+</script>

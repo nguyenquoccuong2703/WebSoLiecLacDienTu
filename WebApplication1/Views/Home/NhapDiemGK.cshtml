@@ -1,0 +1,40 @@
+﻿@model List<WebApplication1.Models.StudentScoreViewModel>
+
+@{
+    ViewData["Title"] = "Nhập Điểm Giữa Kỳ";
+    Layout = "~/Views/Shared/_LayoutGiaoVien.cshtml";
+}
+
+<h2>Nhập Điểm Giữa Kỳ - @ViewBag.ClassName</h2>
+<h3>Giáo viên: @ViewBag.TeacherName</h3>
+
+@using (Html.BeginForm("SaveDiemGiuaKi", "Home", FormMethod.Post))
+{
+    @Html.Hidden("classId", (int)ViewBag.ClassId)
+    @Html.Hidden("teacherId", (int)ViewBag.TeacherId)
+    @Html.Hidden("semester", (int)ViewBag.Semester)
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Tên Sinh Viên</th>
+                    <th>Điểm Giữa Kỳ</th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (int i = 0; i < Model.Count; i++)
+                {
+                    <tr>
+                        <td>@Model[i].Name</td>
+                        <td><input type="text" name="students[@i].GiuaKi" value="@Model[i].GiuaKi" class="form-control" /></td>
+                        <td><input type="hidden" name="students[@i].StudentId" value="@Model[i].StudentId" /></td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Lưu điểm</button>
+}
+

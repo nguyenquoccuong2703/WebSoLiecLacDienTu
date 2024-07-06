@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Chi Tiết Lớp Học";
+    Layout = "~/Views/Shared/_LayoutChiTietHocSinh.cshtml";
+}
+
+<div class="about-us">
+    <div class="container">
+        <h2>Chi Tiết Lớp Học</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Tên lớp: </strong> @ViewBag.ClassInfo.ClassName</p>
+                <p><strong>Năm học: </strong> @ViewBag.ClassInfo.AcademicYear</p>
+                <p><strong>Khối: </strong> @ViewBag.ClassInfo.Grade</p>
+                <p><strong>Giáo viên chủ nhiệm: </strong> @ViewBag.TeacherName</p>
+            </div>
+            <div class="col-md-6">
+                <h4>Danh Sách Học Sinh</h4>
+                @if (ViewBag.Students != null && ViewBag.Students.Any())
+                {
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Tên Học Sinh</th>
+                                    <th>Ngày Sinh</th>
+                                    <th>Số Điện Thoại Phụ Huynh</th>
+                                    <th>Hành Động</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var student in ViewBag.Students)
+                                {
+                                    <tr>
+                                        <td>@student.Name</td>
+                                        <td>@student.DateOfBirth</td>
+                                        <td>@student.SDTPH</td>
+                                        <td>
+                                            <a href="@Url.Action("ChiTietHocSinh", "Home", new { id = student.UserId })" class="btn btn-info">Xem Chi Tiết</a>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+                else
+                {
+                    <p>Không có học sinh nào trong lớp này.</p>
+                }
+            </div>
+        </div>
+    </div>
+</div>

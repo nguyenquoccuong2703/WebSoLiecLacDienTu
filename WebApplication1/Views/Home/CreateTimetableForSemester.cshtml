@@ -1,0 +1,95 @@
+﻿@model WebApplication1.Models.Timetable
+
+@{
+    ViewData["Title"] = "Thêm Thời Khóa Biểu";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+    var teachers = ViewBag.Teachers as List<WebApplication1.Controllers.HomeController.TeacherViewModel>;
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Thêm Thời Khóa Biểu Mới</h2>
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <form asp-action="CreateTimetableForDay" method="post" onsubmit="return validateForm()">
+        <input type="hidden" name="ClassId" value="@ViewBag.SelectedClassId" />
+        <input type="hidden" name="Weekdays" id="Weekdays" />
+
+        <div class="form-group row">
+            <label for="Date" class="col-sm-2 col-form-label">Ngày</label>
+            <div class="col-sm-10">
+                <input type="date" class="form-control" id="Date" name="Date" required onchange="updateWeekday()" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="DisplayedWeekday" class="col-sm-2 col-form-label">Thứ</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="DisplayedWeekday" readonly />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="Times" class="col-sm-2 col-form-label">Giờ học</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="Times" name="Times" required>
+                    @if (ViewBag.TimeSlots != null)
+                    {
+                        foreach (var time in ViewBag.TimeSlots)
+                        {
+                            <option value="@time">@time</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="TeacherId" class="col-sm-2 col-form-label">Giáo viên</label>
+            <div class="col-sm-10">
+                <select class="form-control" id="TeacherId" name="TeacherId" required>
+                    @foreach (var item in teachers)
+                    {
+                        <option value="@item.TeacherId">@item.Name - @item.SubjectTC</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <div class="col-sm-10 offset-sm-2">
+                <button type="submit" class="btn btn-success btn-block">Thêm Thời Khóa Biểu</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    function updateWeekday() {
+        var dateInput = document.getElementById("Date").value;
+        var date = new Date(dateInput + "T00:00:00");
+        var jsWeekday = date.getDay(); // JavaScript day: 0 (Sunday) - 6 (Saturday)
+
+        // Map JS weekday to your database weekday (1 for Sunday to 7 for Saturday)
+        var dbWeekday = (jsWeekday === 0) ? 1 : jsWeekday + 1;
+
+        var weekdays = ["", "Chủ Nhật", "Thứ Hai", "Thứ Ba", "Thứ Tư", "Thứ Năm", "Thứ Sáu", "Thứ Bảy"];
+        document.getElementById("DisplayedWeekday").value = weekdays[dbWeekday];
+        document.getElementById("Weekdays").value = dbWeekday;
+
+        // Debugging statement
+        console.log(`Date: ${dateInput}, JS Weekday: ${jsWeekday}, DB Weekday: ${dbWeekday}`);
+    }
+
+    function validateForm() {
+        var weekday = parseInt(document.getElementById("Weekdays").value);
+        var dateInput = document.getElementById("Date").value;
+        var date = new Date(dateInput + "T00:00:00");
+        var jsWeekday = date.getDay();
+        var selectedWeekday = (jsWeekday === 0) ? 1 : jsWeekday + 1;
+
+        if (selectedWeekday !== weekday) {
+            alert("Ngày đã chọn không khớp với thứ đã chọn. Vui lòng chọn lại.");
+            return false;
+        }
+        return true;
+    }
+</script>

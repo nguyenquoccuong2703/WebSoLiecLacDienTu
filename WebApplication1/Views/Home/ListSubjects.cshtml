@@ -1,0 +1,69 @@
+﻿@model List<WebApplication1.Models.Subject>
+
+@{
+    ViewData["Title"] = "List of Subjects";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+<style>
+    .profile--ds-info {
+        background-color: #ffffff; /* White background */
+        border: 1px solid #28a745; /* Green border */
+        border-radius: 10px; /* Rounded corners */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px; /* Padding for better spacing */
+        margin-bottom: 20px; /* Consistent margin for spacing */
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333; /* Darker text color for better contrast */
+        font-size: 20px; /* Larger font size for readability */
+    }
+
+    .container {
+        margin-top: 20px; /* Spacing from the top */
+    }
+
+    .row {
+        margin-bottom: 20px; /* Consistent spacing between rows */
+    }
+
+    a {
+        text-decoration: none; /* Remove underline from links */
+        color: inherit; /* Inherit text color */
+    }
+</style>
+
+<div class="container">
+    <div class="row">
+        @foreach (var subject in Model)
+        {
+            <div class="col-md-6 mb-3">
+                <a href="@Url.Action("ListTeachersBySubject", "Home", new { subjectName = subject.SubjectName })">
+                    <div class="box-df profile--ds-info">
+                        <div class="caption">
+                            <span class="caption-subject bold">@subject.SubjectName</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>

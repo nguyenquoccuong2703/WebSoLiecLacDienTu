@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication1.Models.Parent>
+
+@{
+    ViewBag.Title = "HienThiPhuHuynh";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<h2>Thông Tin Phụ Huynh</h2>
+
+<p>
+    @Html.ActionLink("Thêm Mới", "AddParent")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditParent", new { id = item.ParentId }) |
+                @Html.ActionLink("Details", "ParentDetails", new { id = item.UserId }) |
+                @Html.ActionLink("Delete", "DeleteParent", new { id = item.ParentId })
+            </td>
+        </tr>
+    }
+
+</table>

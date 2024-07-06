@@ -1,0 +1,62 @@
+﻿@model List<WebApplication1.Models.Student>
+
+@{
+    ViewData["Title"] = "DetailClass";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+    int classId = Model.FirstOrDefault()?.ClassId ?? 0; // Assuming all students in the model belong to the same class
+    int? nextClassId = ViewBag.NextClassId as int?;
+    int? year = ViewBag.Year as int?;
+    var classes = ViewBag.Classes as List<WebApplication1.Models.Class>;
+    string currentClassName = ViewBag.CurrentClassName as string;
+}
+
+<h2>Thông Tin Lớp Học</h2>
+
+<!-- Display current class and year -->
+<p><strong>Lớp:</strong> @currentClassName</p>
+<p><strong>Năm:</strong> @year</p>
+
+@if (nextClassId.HasValue)
+{
+    <p>
+        @Html.ActionLink("Xem Lớp Tiếp Theo", "DetailClass", new { classId = nextClassId.Value }, new { @class = "btn btn-primary" })
+    </p>
+}
+else
+{
+    <p>Next class not found or no more classes.</p>
+}
+<div class="table-responsive">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Date of Birth</th>
+                <th>Class ID</th>
+                <th>Phone Number</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.StudentId</td>
+                    <td>@student.Name</td>
+                    <td>@student.DateOfBirth</td>
+                    <td>@student.ClassId</td>
+                    <td>@student.SDTPH</td>
+                    <td>
+                        @Html.ActionLink("Xóa", "DeleteStudent", new { id = student.StudentId })|
+                        @Html.ActionLink("Sửa", "EditStudent", new { id = student.StudentId })
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<p>
+    @Html.ActionLink("Thêm Học Sinh", "AddStudent", new { classId = classId, year = year }, new { @class = "btn btn-danger" })
+</p>

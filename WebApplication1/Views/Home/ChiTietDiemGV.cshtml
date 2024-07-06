@@ -1,0 +1,100 @@
+﻿@{
+    ViewData["Title"] = "ChiTietDiem";
+    Layout = "~/Views/Shared/_LayoutChiTietHocSinh.cshtml";
+}
+
+@model IEnumerable<WebApplication1.Models.Score>
+
+<div class="container">
+    <h2>Chi Tiết Điểm Học Sinh</h2>
+    <p><strong>Học sinh: </strong>@ViewBag.StudentName</p>
+    <p><strong>Lớp: </strong>@ViewBag.ClassName</p>
+
+    @using (Html.BeginForm("ChiTietDiemGV", "Home", FormMethod.Get))
+    {
+        @Html.Hidden("studentId", Request["studentId"])
+        @Html.Hidden("classId", Request["classId"])
+
+        <div class="form-group">
+            @Html.Label("Chọn kỳ học:")
+            @Html.DropDownList("semester", ViewBag.Semesters as SelectList, "Chọn kỳ", new { @class = "form-control" })
+        </div>
+        <button type="submit" class="btn btn-primary">Xem điểm</button>
+    }
+
+    @using (Html.BeginForm("ImportScoresFromExcel", "ExcelService", FormMethod.Post, new { enctype = "multipart/form-data" }))
+    {
+        <input type="file" name="uploadedFile" />
+        <button type="submit" class="btn btn-primary">Thêm điểm từ file Excel</button>
+    }
+    @*@using (Html.BeginForm("ImportScoresFromExcel", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+        {
+            <input type="file" name="file" />
+            <input type="submit" value="Upload Scores" class="btn btn-primary" />
+        }*@
+
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="bg-danger">
+                    <th>Môn Học</th>
+                    <th>Thường xuyên</th>
+                    <th>Điểm 15'</th>
+                    <th>Điểm 60'</th>
+                    <th>Giữa Kỳ</th>
+                    <th>Cuối Kỳ</th>
+                    <th>Tổng Kết</th>
+                    <th>Kỳ</th>
+                    <th>Trạng Thái</th>
+                </tr>
+            </thead>
+            <tbody>
+                @{
+                    var subjects = new List<string> { "Văn", "Toán", "Tiếng Anh", "Lịch Sử", "Địa lí", "Hóa Học", "Sinh Học", "Công Nghệ" };
+                    int index = 0;
+                }
+
+                @if (Model.Any())
+                {
+                    foreach (var score in Model)
+                    {
+                        if (index < subjects.Count)
+                        {
+                            <tr>
+                                <td>@subjects[index]</td>
+                                <td>@score.Scores</td>
+                                <td>@score.Score15</td>
+                                <td>@score.Score60</td>
+                                <td>@score.GiuaKi</td>
+                                <td>@score.CuoiKi</td>
+                                <td>@score.TongKet</td>
+                                <td>@score.Semester</td>
+                                <td>@score.Status</td>
+                            </tr>
+                            index++;
+                        }
+                    }
+
+                    while (index < subjects.Count)
+                    {
+                        <tr>
+                            <td>@subjects[index]</td>
+                            <td colspan="8" class="text-center">Không có dữ liệu</td>
+                        </tr>
+                        index++;
+                    }
+                }
+                else
+                {
+                    foreach (var subject in subjects)
+                    {
+                        <tr>
+                            <td>@subject</td>
+                            <td colspan="8" class="text-center">Không có dữ liệu</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

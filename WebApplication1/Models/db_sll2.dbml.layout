@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17, 25.125" name="db_sll2">
+  <DataContextMoniker Name="/db_sll2DataContext" />
+  <nestedChildShapes>
+    <classShape Id="afac3cbf-4019-4b3b-9d87-9328d02d2d68" absoluteBounds="14.75, 14.875, 2, 3.6939111328125005">
+      <DataClassMoniker Name="/db_sll2DataContext/AcademicResult" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e173f0c6-a605-40bf-84f9-45d45501d739" absoluteBounds="14.765, 15.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" absoluteBounds="0.75, 17.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/db_sll2DataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9504d6fe-da1e-419e-a6a0-e260efb982a5" absoluteBounds="0.765, 18.085, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ca93869c-38af-4c72-83f1-71227ec64d91" absoluteBounds="3.5, 19.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/db_sll2DataContext/Chat" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0eef5c49-f4d9-46b0-8baf-18d992b3985d" absoluteBounds="3.515, 20.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" absoluteBounds="6.25, 14.25, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/db_sll2DataContext/Class" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6acc0614-c5e2-4194-8f2d-ab16bc1a56e6" absoluteBounds="6.265, 14.71, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="76c80e8a-b9ed-4a9c-9720-dfeaaa500317" absoluteBounds="6.25, 20, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/db_sll2DataContext/Grade" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a59d3b47-18b1-487a-bce5-dfd5c4d5eebf" absoluteBounds="6.265, 20.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="176c2800-ed92-4143-aa96-cce33938ba60" absoluteBounds="11.75, 16.375, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/db_sll2DataContext/LeaveRequest" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ecbc9733-5851-4d66-b712-dd10a3110f3f" absoluteBounds="11.765, 16.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f243556-242d-4fc9-a55b-79eb87816910" absoluteBounds="3.5, 22.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/db_sll2DataContext/Message" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e005a0b7-b63d-4146-8b7d-20158474e831" absoluteBounds="3.515, 23.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7e0698d7-6281-453f-b801-9b088683bbf1" absoluteBounds="9, 19.25, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/db_sll2DataContext/Notification" />
+      <nestedChildShapes>
+        <elementListCompartment Id="84f731ff-a611-43ca-92a6-c6f3de87b9da" absoluteBounds="9.015, 19.71, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b46e29bd-cd1e-4d5e-a048-6794ebbf9352" absoluteBounds="3.5, 11.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/db_sll2DataContext/Parent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5b2fba99-8d18-4049-8ae7-6ae21933bb58" absoluteBounds="3.515, 12.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c03c64c2-0ea3-47bb-a319-95efb460f0ca" absoluteBounds="6.25, 12.125, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/db_sll2DataContext/ParentStudentRelationship" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f5c9d042-d414-4e8d-94d6-0dfad8d9614d" absoluteBounds="6.265, 12.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1d05ded3-bf23-47f1-9aa8-1c51e1f097a4" absoluteBounds="11.75, 11.875, 2, 3.5016097005208309">
+      <DataClassMoniker Name="/db_sll2DataContext/Score" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1021846d-aae2-47b0-b7e9-0e7e1113e81e" absoluteBounds="11.765, 12.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5f2f4a8b-6b38-472f-9c76-6df46a991826" absoluteBounds="3.5, 14.375, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/db_sll2DataContext/Staff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="175deb75-39d7-40b3-8242-1a6635b177c4" absoluteBounds="3.515, 14.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" absoluteBounds="9, 15.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/db_sll2DataContext/Student" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e09ff907-4af8-497b-8215-fa991cad32dd" absoluteBounds="9.015, 16.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cc0f147-59ce-4a54-91e4-e134456543fa" absoluteBounds="3.5, 9.5, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/db_sll2DataContext/Subject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="483091c4-ffb7-4ea0-8d7f-0c4a3a6bf3db" absoluteBounds="3.515, 9.96, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3e513e48-cb56-4fcd-8f63-385b1201965d" absoluteBounds="6.25, 17.375, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/db_sll2DataContext/SubjectTeacher" />
+      <nestedChildShapes>
+        <elementListCompartment Id="416b5563-6942-49ea-b2fe-31838d7428a2" absoluteBounds="6.265, 17.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4b592cea-c794-4794-b32b-9e4ede68bc31" absoluteBounds="3.5, 17.125, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/db_sll2DataContext/Teacher" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b12bc56e-9967-46e3-a0a3-ca4d0b118f48" absoluteBounds="3.515, 17.585, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8dd79336-319c-4296-914e-bbba2d703253" absoluteBounds="9, 12.75, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/db_sll2DataContext/TeacherClassAssignment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="977b56b9-ae9a-46df-9085-3ade8f0f831b" absoluteBounds="9.015, 13.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1b45226-ff8a-4cfe-a797-ba1766fa38c9" absoluteBounds="12, 19.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/db_sll2DataContext/Timetable" />
+      <nestedChildShapes>
+        <elementListCompartment Id="72f3262b-fa7b-4e41-bf99-c6b2bfe1a84e" absoluteBounds="12.015, 20.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(1.75 : 19.2035953776042); (1.75 : 20.9527498372396); (2.46354541666667 : 20.9527498372396 : JumpStart); (2.63021208333333 : 20.9527498372396 : JumpEnd); (3.5 : 20.9527498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Chat" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="ca93869c-38af-4c72-83f1-71227ec64d91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 19.2035953776042); (2.2812525 : 20.3826224186198); (2.46354541666667 : 20.3826224186198 : JumpStart); (2.63021208333333 : 20.3826224186198 : JumpEnd); (3.5 : 20.3826224186198)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Chat1" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="ca93869c-38af-4c72-83f1-71227ec64d91" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 20.0543843778546); (8.44107443490112 : 19.8633099429534 : JumpStart); (8.55892556509888 : 19.7454588127557 : JumpEnd); (8.71875 : 19.5856343778546); (8.71875 : 18.9439111328125); (8.72916666666667 : 18.9439111328125 : JumpStart); (8.89583333333333 : 18.9439111328125 : JumpEnd); (9.91666666666667 : 18.9439111328125 : JumpStart); (10.0833333333333 : 18.9439111328125 : JumpEnd); (13.8229166666667 : 18.9439111328125 : JumpStart); (13.9895833333333 : 18.9439111328125 : JumpEnd); (14.375 : 18.9439111328125); (14.75 : 18.5689111328125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/db_sll2DataContext/Grade/Grade_AcademicResult" />
+      <nodes>
+        <classShapeMoniker Id="76c80e8a-b9ed-4a9c-9720-dfeaaa500317" />
+        <classShapeMoniker Id="afac3cbf-4019-4b3b-9d87-9328d02d2d68" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.25 : 20); (5.875 : 19.625); (5.875 : 16.3972580382111); (5.87857443490112 : 16.39368360331 : JumpStart); (6.09017556509888 : 16.1820824731123 : JumpEnd); (6.2513612283153 : 16.0208968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/db_sll2DataContext/Grade/Grade_Class" />
+      <nodes>
+        <classShapeMoniker Id="76c80e8a-b9ed-4a9c-9720-dfeaaa500317" />
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.2187475 : 19.2035953776042); (1.2187475 : 23.8277498372396); (3.5 : 23.8277498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Message" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="5f243556-242d-4fc9-a55b-79eb87816910" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.54687875 : 19.2035953776042); (2.54687875 : 23.2576224186198); (3.5 : 23.2576224186198)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Message1" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="5f243556-242d-4fc9-a55b-79eb87816910" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.9595955357071); (8.44107443490112 : 16.1506699706083 : JumpStart); (8.55892556509888 : 16.268521100806 : JumpEnd); (8.62857443490112 : 16.3381699706083 : JumpStart); (8.74642556509888 : 16.456021100806 : JumpEnd); (8.8125 : 16.5220955357071); (8.8125 : 20.3277498372396); (9 : 20.3277498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Class/Class_Notification" />
+      <nodes>
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+        <classShapeMoniker Id="7e0698d7-6281-453f-b801-9b088683bbf1" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.75 : 17.625); (1.75 : 12.7604484049479); (3.5 : 12.7604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Parent" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="b46e29bd-cd1e-4d5e-a048-6794ebbf9352" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 12.8181469726562); (5.94791666666667 : 12.8181469726562 : JumpStart); (6.11458333333333 : 12.8181469726562 : JumpEnd); (6.25 : 12.8181469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Parent/Parent_ParentStudentRelationship" />
+      <nodes>
+        <classShapeMoniker Id="b46e29bd-cd1e-4d5e-a048-6794ebbf9352" />
+        <classShapeMoniker Id="c03c64c2-0ea3-47bb-a319-95efb460f0ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 20.7243989726563); (8.5 : 20.7243989726563); (8.5 : 18.5881982421875); (8.54166666666667 : 18.5881982421875 : JumpStart); (8.70833333333333 : 18.5881982421875 : JumpEnd); (8.72916666666667 : 18.5881982421875 : JumpStart); (8.89583333333333 : 18.5881982421875 : JumpEnd); (9.91666666666667 : 18.5881982421875 : JumpStart); (10.0833333333333 : 18.5881982421875 : JumpEnd); (11.5 : 18.5881982421875); (11.5 : 15.7516097005208); (12.75 : 15.7516097005208); (12.75 : 15.3766097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Grade/Grade_Score" />
+      <nodes>
+        <classShapeMoniker Id="76c80e8a-b9ed-4a9c-9720-dfeaaa500317" />
+        <classShapeMoniker Id="1d05ded3-bf23-47f1-9aa8-1c51e1f097a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 14.9800032552083); (8.54166666666667 : 14.9800032552083 : JumpStart); (8.77083333333333 : 14.9800032552083 : JumpEnd); (11.75 : 14.9800032552083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Class/Class_Score" />
+      <nodes>
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+        <classShapeMoniker Id="1d05ded3-bf23-47f1-9aa8-1c51e1f097a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.2812525 : 17.625); (2.2812525 : 15.3565991210938); (3.5 : 15.3565991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Staff" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="5f2f4a8b-6b38-472f-9c76-6df46a991826" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 16.0945548502604); (11.4166666666667 : 16.0945548502604 : JumpStart); (11.5833333333333 : 16.0945548502604 : JumpEnd); (13.8229166666667 : 16.0945548502604 : JumpStart); (13.9895833333333 : 16.0945548502604 : JumpEnd); (14.75 : 16.0945548502604)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Student/Student_AcademicResult" />
+      <nodes>
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+        <classShapeMoniker Id="afac3cbf-4019-4b3b-9d87-9328d02d2d68" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 17.0777498372396); (11.4166666666667 : 17.0777498372396 : JumpStart); (11.5833333333333 : 17.0777498372396 : JumpEnd); (11.75 : 17.0777498372396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Student/Student_LeaveRequest" />
+      <nodes>
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+        <classShapeMoniker Id="176c2800-ed92-4143-aa96-cce33938ba60" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(9 : 15.625); (8.74642556509888 : 15.3714255650989 : JumpStart); (8.62857443490112 : 15.2535744349011 : JumpEnd); (8.625 : 15.25); (8.625 : 12.8181469726562); (8.25 : 12.8181469726562)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Student/Student_ParentStudentRelationship" />
+      <nodes>
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+        <classShapeMoniker Id="c03c64c2-0ea3-47bb-a319-95efb460f0ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 15.625); (11.375 : 15.25); (11.375 : 15.7516097005208); (11.5660744349011 : 15.5605352656197 : JumpStart); (11.6839255650989 : 15.442684135422 : JumpEnd); (11.75 : 15.3766097005208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/db_sll2DataContext/Student/Student_Score" />
+      <nodes>
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+        <classShapeMoniker Id="1d05ded3-bf23-47f1-9aa8-1c51e1f097a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.22760602088341 : 20); (8.44107443490112 : 19.7865315859823 : JumpStart); (8.55892556509888 : 19.6686804557845 : JumpEnd); (8.625 : 19.6026060208834); (8.625 : 16.7340018372396); (8.72916666666667 : 16.7340018372396 : JumpStart); (8.89583333333333 : 16.7340018372396 : JumpEnd); (9 : 16.7340018372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Grade/Grade_Student" />
+      <nodes>
+        <classShapeMoniker Id="76c80e8a-b9ed-4a9c-9720-dfeaaa500317" />
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.7922977678536); (8.41666666666667 : 15.7922977678536 : JumpStart); (8.58333333333333 : 15.7922977678536 : JumpEnd); (8.60416666666667 : 15.7922977678536 : JumpStart); (8.77083333333333 : 15.7922977678536 : JumpEnd); (9 : 15.7922977678536)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Class/Class_Student" />
+      <nodes>
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.1771468098958); (5.79166666666667 : 19.1771468098958 : JumpStart); (5.95833333333333 : 19.1771468098958 : JumpEnd); (8.41666666666667 : 19.1771468098958 : JumpStart); (8.89583333333333 : 19.1771468098958 : JumpEnd); (10 : 19.1771468098958); (10 : 17.7804996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Student" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="7b079cc8-2eaf-4678-bd2a-b61b4fb2dcc5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.6618455607472); (6.03125 : 11.1930955607472); (6.03125 : 18.0681469726563); (6.25 : 18.0681469726563)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Subject/Subject_SubjectTeacher" />
+      <nodes>
+        <classShapeMoniker Id="3cc0f147-59ce-4a54-91e4-e134456543fa" />
+        <classShapeMoniker Id="3e513e48-cb56-4fcd-8f63-385b1201965d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.4682867976262 : 17.125); (5.81607443490112 : 16.7772123627251 : JumpStart); (5.93392556509888 : 16.6593612325273 : JumpEnd); (5.9375 : 16.6557867976262); (5.9375 : 15.1354484049479); (5.94791666666667 : 15.1354484049479 : JumpStart); (6.11458333333333 : 15.1354484049479 : JumpEnd); (6.25 : 15.1354484049479)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_Class" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 19.0160546875); (5.79166666666667 : 19.0160546875 : JumpStart); (5.95833333333333 : 19.0160546875 : JumpEnd); (8.41666666666667 : 19.0160546875 : JumpStart); (8.70833333333333 : 19.0160546875 : JumpEnd); (8.72916666666667 : 19.0160546875 : JumpStart); (8.89583333333333 : 19.0160546875 : JumpEnd); (9.91666666666667 : 19.0160546875 : JumpStart); (10.0833333333333 : 19.0160546875 : JumpEnd); (12.75 : 19.0160546875); (12.75 : 18.3381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_LeaveRequest" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="176c2800-ed92-4143-aa96-cce33938ba60" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 18.1022400461238); (5.75 : 18.1022400461238); (5.75 : 17.125); (5.79166666666667 : 17.125 : JumpStart); (6.11458333333333 : 17.125 : JumpEnd); (8.5 : 17.125); (8.5 : 15.375); (8.60416666666667 : 15.375 : JumpStart); (8.83333333333333 : 15.375 : JumpEnd); (11.1666666666667 : 15.375 : JumpStart); (11.4583333333333 : 15.375 : JumpEnd); (11.625 : 15.375); (11.625 : 15.6266097005208); (12.6666666666667 : 15.6266097005208 : JumpStart); (12.8333333333333 : 15.6266097005208 : JumpEnd); (13.281252 : 15.6266097005208); (13.281252 : 15.3766097005208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_Score" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="1d05ded3-bf23-47f1-9aa8-1c51e1f097a4" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.6590734863281); (5.66666666666667 : 17.6590734863281 : JumpStart); (6.11458333333333 : 17.6590734863281 : JumpEnd); (6.25 : 17.6590734863281)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_SubjectTeacher" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="3e513e48-cb56-4fcd-8f63-385b1201965d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 18.3565991210938); (3.5 : 18.3565991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/User/User_Teacher" />
+      <nodes>
+        <classShapeMoniker Id="d989fa89-9b12-45e0-94b7-0b0eed4ca6f8" />
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 14.3112992741887); (8.56607443490112 : 13.9952248392876 : JumpStart); (8.68392556509888 : 13.8773737090898 : JumpEnd); (8.8125 : 13.7487992741887); (8.8125 : 14.6797900152744); (9 : 14.4922900152744)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/db_sll2DataContext/Class/Class_TeacherClassAssignment" />
+      <nodes>
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+        <classShapeMoniker Id="8dd79336-319c-4296-914e-bbba2d703253" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.2216487596154); (5.78414875961538 : 16.9375); (5.79166666666667 : 16.9375 : JumpStart); (6.11458333333333 : 16.9375 : JumpEnd); (8.41666666666667 : 16.9375 : JumpStart); (8.58333333333333 : 16.9375 : JumpEnd); (8.6875 : 16.9375); (8.6875 : 14.8633648328325); (9.0299680229367 : 14.5208968098958)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_TeacherClassAssignment" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="8dd79336-319c-4296-914e-bbba2d703253" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 15.5008048502604); (8.41666666666667 : 15.5008048502604 : JumpStart); (8.58333333333333 : 15.5008048502604 : JumpEnd); (8.60416666666667 : 15.5008048502604 : JumpStart); (8.77083333333333 : 15.5008048502604 : JumpEnd); (8.79247151692708 : 15.5008048502604 : JumpStart); (8.95913818359375 : 15.5008048502604 : JumpEnd); (11.0408618164063 : 15.5008048502604 : JumpStart); (11.2075284830729 : 15.5008048502604 : JumpEnd); (11.2916666666667 : 15.5008048502604 : JumpStart); (11.4583333333333 : 15.5008048502604 : JumpEnd); (11.5416666666667 : 15.5008048502604 : JumpStart); (11.7091381835937 : 15.5008048502604 : JumpEnd); (12.6666666666667 : 15.5008048502604 : JumpStart); (12.8333333333333 : 15.5008048502604 : JumpEnd); (13.1979186666667 : 15.5008048502604 : JumpStart); (13.3645853333333 : 15.5008048502604 : JumpEnd); (13.90625 : 15.5008048502604); (13.90625 : 19.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Class/Class_Timetable" />
+      <nodes>
+        <classShapeMoniker Id="cf0dc394-0418-4a57-82d6-c226f2b56eb6" />
+        <classShapeMoniker Id="c1b45226-ff8a-4cfe-a797-ba1766fa38c9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 18.8838525390625); (5.79166666666667 : 18.8838525390625 : JumpStart); (5.95833333333333 : 18.8838525390625 : JumpEnd); (8.41666666666667 : 18.8838525390625 : JumpStart); (8.70833333333333 : 18.8838525390625 : JumpEnd); (8.72916666666667 : 18.8838525390625 : JumpStart); (8.89583333333333 : 18.8838525390625 : JumpEnd); (9.91666666666667 : 18.8838525390625 : JumpStart); (10.0833333333333 : 18.8838525390625 : JumpEnd); (12.6666666666667 : 18.8838525390625 : JumpStart); (12.8333333333333 : 18.8838525390625 : JumpEnd); (13.8749975 : 18.8838525390625); (13.8749975 : 19.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/db_sll2DataContext/Teacher/Teacher_Timetable" />
+      <nodes>
+        <classShapeMoniker Id="4b592cea-c794-4794-b32b-9e4ede68bc31" />
+        <classShapeMoniker Id="c1b45226-ff8a-4cfe-a797-ba1766fa38c9" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

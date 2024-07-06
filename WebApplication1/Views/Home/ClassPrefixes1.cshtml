@@ -1,0 +1,71 @@
+﻿@model WebApplication1.Controllers.HomeController.ClassPrefixViewModel
+
+@{
+    ViewData["Title"] = "Class Prefixes";
+    Layout = "~/Views/Shared/_LayoutDaoTao.cshtml";
+}
+
+<style>
+    .profile--ds-info {
+        background-color: #ffffff;
+        border: 1px solid #28a745;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+        .profile--ds-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+    .box-df {
+        height: 110px;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+
+    .caption-subject {
+        color: #333;
+        font-size: 20px;
+    }
+
+    .container {
+        margin-top: 20px;
+    }
+
+    .row {
+        margin-bottom: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+</style>
+
+<div class="container">
+    <h2>Chọn Khối Năm @Model.Year</h2>
+    <div class="row">
+        @foreach (var prefix in Model.ClassPrefixes)
+        {
+            <div class="col-md-6 mb-3">
+                <a href="@Url.Action("ClassesByPrefix1", "Home", new { year = Model.Year, prefix = prefix })">
+                    <div class="box-df profile--ds-info">
+                        <div class="caption">
+                            <span class="caption-subject bold">@prefix</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        }
+    </div>
+</div>
